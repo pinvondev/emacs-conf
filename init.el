@@ -25,10 +25,11 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(column-number-mode 1)
+ '(flymake-google-cpplint-command "/home/pinvon/.local/bin/cpplint")
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (org-page auctex sr-speedbar monokai-theme helm volatile-highlights use-package undo-tree counsel-projectile company)))
+    (google-c-style zygospore projectile flymake-cursor flymake-google-cpplint auto-complete-c-headers auto-complete yasnippet org-page auctex sr-speedbar monokai-theme helm volatile-highlights use-package undo-tree counsel-projectile)))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 
@@ -103,7 +104,7 @@
 (setq op/repository-directory "~/myblog")   ;; the repository location
 (setq op/site-domain "http://pinvondev.github.io/")         ;; your domain
 ;;; the configuration below you should choose one, not both
-(setq op/personal-disqus-shortname "pw_lin")    ;; your disqus commenting system
+(setq op/personal-disqus-shortname "pw lin")    ;; your disqus commenting system
 ;(setq op/personal-duoshuo-shortname "your_duoshuo_shortname")  ;; your duoshuo commenting system
 (setq op/hashover-comments t)                                   ;; activate hashover self-hosted comment system
 (setq op/personal-github-link "https://github.com/pinvondev")
@@ -128,3 +129,38 @@
 
 ;;; 取消图片显示原来的大小
 (setq org-image-actual-width nil)
+
+;;; C/C++
+(require 'auto-complete)
+(require 'auto-complete-config)
+(ac-config-default)
+
+(require 'yasnippet)
+(yas-global-mode 1)
+
+(defun my:ac-c-header-init ()
+	(require 'auto-complete-c-headers)
+	(add-to-list 'ac-sources 'ac-source-c-headers)
+	(add-to-list 'achead:include-directories '"/usr/lib/gcc/x86_64-linux-gnu/5/include"))
+(add-hook 'c++-mode-hook 'my:ac-c-header-init)
+(add-hook 'c-mode-hook 'my:ac-c-header-init)
+
+(defun my:flymake-google-init ()
+  (require 'flymake-google-cpplint)
+  (custom-set-variables
+   '(flymake-google-cpplint-command "/home/pinvon/.local/bin/cpplint"))
+  (flymake-google-cpplint-load))
+(add-hook 'c-mode-hook 'my:flymake-google-init)
+(add-hook 'c++-mode-hook 'my:flymake-google-init)
+
+(require 'google-c-style)
+(add-hook 'c-mode-common-hook 'google-set-c-style)
+(add-hook 'c-mode-common-hook 'google-make-newline-indent)
+
+(semantic-mode 1)
+(defun my:add-semantic-to-autocomplete()
+  (add-to-list 'ac-sources 'ac-source-semantic))
+(add-hook 'c-mode-common-hook 'my:add-semantic-to-autocomplete)
+(global-ede-mode 1)
+
+;; (ede-cpp-root-project "my project" :file "~/demos/my_program/src/main.cpp" :include-path '("/../my_inc") :system-include-path '("/usr/include/c++/3.2.2/"))
