@@ -1,8 +1,9 @@
 (require 'package)
 (add-to-list 'package-archives
              ;;'("melpa" . "http://elpa.emacs-china.org/melpa/") t)
-             ;;'("melpa". "http://stable.melpa.org/packages") t)
-             '("melpa-stable" . "http://melpa-stable.milkbox.net/packages/") t)
+             '("melpa" . "https://melpa.org/packages/") t)
+             ;;'("melpa". "http://stable.melpa.org/packages/") t)
+             ;;'("melpa-stable" . "http://melpa-stable.milkbox.net/packages/") t)
 (package-initialize)
 
 (when (not package-archive-contents)
@@ -29,10 +30,14 @@
  '(column-number-mode 1)
  '(flymake-google-cpplint-command "/home/pinvon/.local/bin/cpplint")
  '(menu-bar-mode nil)
- '(org-agenda-files (quote ("~/GTD/gtd.org")))
+ '(org-agenda-files
+   (quote
+    ("~/GTD/test.org" "~/文档/work/agenda/test.org" "/home/pinvon/GTD/agenda.org")))
+ '(org-pomodoro-finished-sound "/home/pinvon/音乐/my heart will go on.wav")
+ '(org-pomodoro-length 30)
  '(package-selected-packages
    (quote
-    (pug-mode go-mode google-c-style zygospore projectile flymake-cursor flymake-google-cpplint auto-complete-c-headers auto-complete yasnippet auctex sr-speedbar monokai-theme helm volatile-highlights use-package undo-tree counsel-projectile)))
+    (toc-org org-make-toc org-mind-map anki-editor org-pomodoro mustache pug-mode go-mode google-c-style zygospore projectile flymake-cursor flymake-google-cpplint auto-complete-c-headers auto-complete yasnippet auctex sr-speedbar monokai-theme helm volatile-highlights use-package undo-tree counsel-projectile)))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 
@@ -41,10 +46,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Noto Sans CJK SC" :foundry "GOOG" :slant normal :weight normal :height 120 :width normal)))))
-
-(custom-set-faces
+ '(default ((t (:family "Noto Sans CJK SC" :foundry "GOOG" :slant normal :weight normal :height 120 :width normal))))
  '(org-table ((t (:foreground "#6c71c4" :family "Ubuntu Mono")))))
+
+
 
 (defun open-init-file ()
   (interactive)
@@ -80,8 +85,8 @@
 
 ;; Latex Configuration(CTex)
 (require 'tex-mik)
-(load "~/.emacs.d/elpa/auctex-11.91.0/auctex.el" nil t t)
-(load "~/.emacs.d/elpa/auctex-11.91.0/preview.el" nil t t)
+(load "~/.emacs.d/elpa/auctex-12.1.1/auctex.el" nil t t)
+(load "~/.emacs.d/elpa/auctex-12.1.1/preview.el" nil t t)
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)
 (setq-default TeX-master nil)
@@ -179,3 +184,83 @@
 
                  ;; 你可以在此添加更多的站点设置
                ))
+
+;; GTD
+(setq org-todo-keywords
+  '((sequence "TODO(t)"  "|" "DONE(d!)" "ABORT(a@/!)")
+))
+(setq org-log-done 'note)
+(setq org-tag-alist '(("@work" . ?w) ("@study" . ?s) ("@anki" . ?a)))
+
+;; 21 day emacs
+(setq-default cursor-type 'bar)
+(delete-selection-mode 1)  ;; 选中一段文字后, 输入一个字符, 可以替换选中内容
+(global-hl-line-mode 1)  ;; 高亮当前行
+(setq org-agenda-files '("~/GTD"))  ;; 设置默认的 org-agenda 文件目录
+(global-set-key (kbd "C-c a") 'org-agenda)  ;; 设置 org-agenda 打开的快捷键
+(global-set-key (kbd "C-c .") 'org-time-stamp)
+(setq org-refile-targets '(
+                           ("~/GTD/agenda.org" :maxlevel . 1)))
+(setq org-archive-location (concat "archive/archive-"
+                                   (format-time-string "%Y%m" (current-time))
+                                   ".org_archive::"))
+
+
+;; my fix for tab indent
+(defun zilongshanren/indent-region(numSpaces)
+  (progn
+                                      ; default to start and end of current line
+    (setq regionStart (line-beginning-position))
+    (setq regionEnd (line-end-position))
+
+                                      ; if there's a selection, use that instead of the current line
+    (when (use-region-p)
+      (setq regionStart (region-beginning))
+      (setq regionEnd (region-end))
+      )
+
+    (save-excursion                          ; restore the position afterwards
+      (goto-char regionStart)                ; go to the start of region
+      (setq start (line-beginning-position)) ; save the start of the line
+      (goto-char regionEnd)                  ; go to the end of region
+      (setq end (line-end-position))         ; save the end of the line
+
+      (indent-rigidly start end numSpaces) ; indent between start and end
+      (setq deactivate-mark nil)           ; restore the selected region
+      )
+    )
+  )
+
+
+(defun zilongshanren/tab-region ()
+  (interactive "p")
+  (if (use-region-p)
+      (zilongshanren/indent-region 4)               ; region was selected, call indent-region
+    (insert "    ")                   ; else insert four spaces as expected
+    ))
+
+(defun zilongshanren/untab-region ()
+  (interactive "p")
+  (zilongshanren/indent-region -4))
+
+(defun zilongshanren/hack-tab-key ()
+  (interactive)
+  (local-set-key (kbd "<tab>") 'zilongshanren/tab-region)
+  (local-set-key (kbd "<S-tab>") 'zilongshanren/untab-region)
+  )
+
+(add-hook 'prog-mode-hook 'zilongshanren/hack-tab-key)
+
+(defun add-my-toc ()
+  (interactive)
+  (insert ":PROPERTY:\n")
+  (insert ":TOC: \n")
+  (insert ":END:\n"))
+
+(require 'ox-org)
+(setq org-mind-map-engine "dot")
+(if (require 'toc-org nil t)
+    (add-hook 'org-mode-hook 'toc-org-mode)
+  (warn "toc-org not found"))
+
+(require 'org-tempo)
