@@ -1,0 +1,1238 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+xuanyuan rpc server模块
+注册主机资源管理系统对外rpc接口，并完成rpc server定制化配置
+接口组注册拓扑为：
+    RPCServer-RPCAPI-Endpoint(APIGroup)
+\"\"\"" code nil nil [1 117])
+            ("emei.framework.server.api" include nil nil [119 188])
+            ("emei.framework.server.rccpserver" include nil nil [189 244])
+            ("rccpxuanyuan.API" include nil nil [246 293])
+            ("rccpxuanyuan.common" include nil nil [294 334])
+            ("rccpxuanyuan.common.constants" include nil nil [335 396])
+            ("XUANYUAN_RPC_SERVER_CONF" code nil nil [399 459])
+            ("RPC_ENDPOINT_CONTENT_KEY" variable nil nil [460 496])
+            ("DEFAULT_SERVER" variable nil nil [497 529])
+            ("DEFAULT_RPCAPI" variable nil nil [530 562])
+            ("_XuanyuanRPCEndpoint" type
+               (:documentation "
+    Xuanyuan子系统RPCEndpoint封装
+    职责：
+        1. 提供RPCEndpoint注册Xuanyuan子系统接口组接口能力；
+        2. 提供生产指定Xuanyuan子系统接口组RPCEndpoint能力；
+    "
+                :superclasses ("RPCEndpoint")
+                :members 
+                  ( ("target" variable nil (reparse-symbol indented_block_body) [756 769])
+                    ("api_group_cls" variable nil (reparse-symbol indented_block_body) [774 796])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [831 849])
+                            ("self" variable nil (reparse-symbol indented_block_body) [858 896]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [815 819]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [802 897])
+                    ("__getattr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [918 922])
+                            ("attr_name" variable nil (reparse-symbol function_parameters) [924 933]))                          )
+                        (reparse-symbol indented_block_body) [902 1412])
+                    ("__dir__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1429 1433]))                          )
+                        (reparse-symbol indented_block_body) [1417 1701]))                  
+                :type "class")
+                nil [565 1701])
+            ("_create_endpoint" function
+               (:documentation "
+    RPCEndpoint类创建方法
+    params api_group_cls：本地API接口类
+    type: class
+    params namespace：rpc接口性命名空间属性
+    type: string
+    params version：rpc接口版本属性
+    type: string
+    "
+                :arguments 
+                  ( ("api_group_cls" variable nil (reparse-symbol function_parameters) [1724 1737])
+                    ("namespace" variable nil (reparse-symbol function_parameters) [1739 1748])
+                    ("version" variable nil (reparse-symbol function_parameters) [1750 1757]))                  )
+                nil [1703 2156])
+            ("XuanyuanRPCServer" type
+               (:documentation "
+    Xuanyuan RPC server类
+    职责：
+        1. 封装底层RPC server控制接口
+        2. 完成Xuanyuan子系统RPC server定制化配置
+        3. 组合Xuanyuan子系统RPCEndpoint注册和RPCAPI组成业务
+    "
+                :members 
+                  ( ("_server" variable nil (reparse-symbol indented_block_body) [2356 2408])
+                    ("_rpcapi_group" variable nil (reparse-symbol indented_block_body) [2413 2431])
+                    ("start" function
+                       (:documentation "
+        启动rpc server服务，阻塞监听rpc调用
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [2464 2467]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2437 2556])
+                    ("stop" function
+                       (:documentation "
+        关闭rpc server服务，阻塞监听rpc调用
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [2587 2590]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2561 2678])
+                    ("register_rpcapi" function
+                       (:documentation "
+        注册RPC API
+        params rpcapi_name：指定rpc api
+        type: string
+        params api_group_cls：本地API接口类
+        type: class
+        params namespace：rpc接口性命名空间属性
+        type: string
+        params version：rpc接口版本属性
+        type: string
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [2720 2723])
+                            ("rpcapi_name" variable nil (reparse-symbol function_parameters) [2725 2736])
+                            ("api_group_cls" variable nil (reparse-symbol function_parameters) [2738 2751])
+                            ("namespace" variable nil (reparse-symbol function_parameters) [2753 2762])
+                            ("version" variable nil (reparse-symbol function_parameters) [2764 2771]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2683 3359])
+                    ("register_server" function
+                       (:documentation "
+        注册RPC API
+        params server_name：指定rpc server，要求server在XUANYUAN_RPC_SERVER_CONF有配置
+        type: string
+        params rpcapi_name：指定rpc api
+        type: string
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [3401 3404])
+                            ("server_name" variable nil (reparse-symbol function_parameters) [3406 3417])
+                            ("rpcapi_name" variable nil (reparse-symbol function_parameters) [3419 3430]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [3364 3729]))                  
+                :type "class")
+                nil [2158 3729])
+            ("XuanyuanRPCServer" code nil nil [3792 3872])
+            ("XuanyuanRPCServer" code nil nil [3873 3949])
+            ("XuanyuanRPCServer" code nil nil [3950 4015]))          
+      :file "xuanyuan_rpcserver.py"
+      :pointmax 4016
+      :fsize 4437
+      :lastmodtime '(23927 242 653565 720000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+JSON RPC Client
+Create on: 2019/7/23
+\"\"\"" code nil nil [1 45])
+            ("json" include nil nil [47 58])
+            ("socket" include nil nil [59 72])
+            ("time" include nil nil [73 84])
+            ("uuid" include nil nil [85 96])
+            ("logging" include nil nil [97 111])
+            ("enum" include nil nil [112 133])
+            ("rccpxuanyuan.common.exception" include nil nil [134 220])
+            ("NAME_LEN" variable nil nil [223 236])
+            ("SOCK_RECV_BUFF" variable nil nil [237 258])
+            ("JSON_RPC_VERSION" variable nil nil [259 283])
+            ("DESCRIPTION_LEN" variable nil nil [284 304])
+            ("DEFAULT_TIMEOUT" variable nil nil [305 325])
+            ("LOG" variable nil nil [336 366])
+            ("NORMAL_CODE" variable nil nil [367 382])
+            ("JSONRPCErrorType" type
+               (:documentation "
+    servicer类型枚举
+    "
+                :superclasses ("Enum")
+                :members 
+                  ( ("client" variable nil (reparse-symbol indented_block_body) [470 485])
+                    ("client_timeout" variable nil (reparse-symbol indented_block_body) [501 524])
+                    ("process_req" variable nil (reparse-symbol indented_block_body) [540 560])
+                    ("server_app" variable nil (reparse-symbol indented_block_body) [578 597]))                  
+                :type "class")
+                nil [402 611])
+            ("JSONRPCClient" type
+               (:documentation "JSON RPC 客户端"
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [776 792])
+                            ("self" variable nil (reparse-symbol indented_block_body) [801 831]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [744 748])
+                            ("addr" variable nil (reparse-symbol function_parameters) [750 754])
+                            ("port" variable nil (reparse-symbol function_parameters) [756 760]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [731 2148])
+                    ("__del__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2165 2169]))                          )
+                        (reparse-symbol indented_block_body) [2153 2236])
+                    ("_is_af_unix" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2257 2261]))                          )
+                        (reparse-symbol indented_block_body) [2241 2347])
+                    ("_is_af_inet6" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2369 2373]))                          )
+                        (reparse-symbol indented_block_body) [2352 2450])
+                    ("_construct_response" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2479 2483])
+                            ("code" variable nil (reparse-symbol function_parameters) [2485 2489])
+                            ("response" variable nil (reparse-symbol function_parameters) [2491 2499]))                          )
+                        (reparse-symbol indented_block_body) [2455 2737])
+                    ("call" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2751 2755])
+                            ("method" variable nil (reparse-symbol function_parameters) [2757 2763])
+                            ("params" variable nil (reparse-symbol function_parameters) [2765 2771])
+                            ("timeout" variable nil (reparse-symbol function_parameters) [2778 2785]))                          
+                        :documentation "调用方法
+        params: dict, optional
+        ")
+                        (reparse-symbol indented_block_body) [2742 4604]))                  
+                :type "class")
+                nil [682 4604])
+            ("call" function
+               (:documentation "外部 rpc 调用接口
+    使用短连接
+    "
+                :arguments 
+                  ( ("address" variable nil (reparse-symbol function_parameters) [4615 4622])
+                    ("port" variable nil (reparse-symbol function_parameters) [4624 4628])
+                    ("method" variable nil (reparse-symbol function_parameters) [4630 4636])
+                    ("params" variable nil (reparse-symbol function_parameters) [4638 4644])
+                    ("timeout" variable nil (reparse-symbol function_parameters) [4651 4658]))                  )
+                nil [4606 4793]))          
+      :file "jsonrpcclient.py"
+      :pointmax 4793
+      :fsize 4958
+      :lastmodtime '(23927 412 198203 421000)
+      :unmatched-syntax '((INDENT_BLOCK 3657 . 3691) (NEWLINE 3656 . 3657) (IF 3638 . 3640) (STRING_LITERAL 3653 . 3655) (COLON 3655 . 3656) (INDENT_BLOCK 1927 . 2148) (NEWLINE 1926 . 1927) (COLON 1925 . 1926) (TRY 840 . 843) (AS 1920 . 1922) (INDENT_BLOCK 1162 . 1215) (NEWLINE 1161 . 1162) (COLON 1160 . 1161) (TRY 1079 . 1082) (AS 1154 . 1156)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+api工具模块
+提供api使用的装饰器和公共机制
+\"\"\"" code nil nil [1 33])
+            ("logging" include nil nil [35 49])
+            ("collections" include nil nil [50 84])
+            ("decorator" include nil nil [85 116])
+            ("rccpxuanyuan.common.threadlocal" include nil nil [118 175])
+            ("exception" include nil nil [184 200])
+            ("logutils" include nil nil [208 223])
+            ("response" include nil nil [231 246])
+            ("_LOG" variable nil nil [249 280])
+            ("Context" variable nil nil [283 351])
+            ("logged_error" function
+               (:documentation "
+    接口异常写日志装饰器
+    "
+                :arguments 
+                  ( ("log_on" variable nil (reparse-symbol function_parameters) [371 377])
+                    ("msg" variable nil (reparse-symbol function_parameters) [382 385]))                  )
+                nil [354 927])
+            ("catch_error" function
+               (:documentation "
+    接口异常捕获装饰器
+    "
+                :arguments 
+                  ( ("error_type" variable nil (reparse-symbol function_parameters) [945 955]))                  )
+                nil [929 1291])
+            ("map_error" function
+               (:documentation "
+    接口异常映射装饰器
+    "
+                :arguments 
+                  ( ("except_error" variable nil (reparse-symbol function_parameters) [1307 1319])
+                    ("mapped_error" variable nil (reparse-symbol function_parameters) [1321 1333]))                  )
+                nil [1293 1957])
+            ("raise_error" function
+               (:documentation "
+    接口异常抛指定异常装饰器
+    "
+                :arguments 
+                  ( ("spec_error" variable nil (reparse-symbol function_parameters) [1975 1985]))                  )
+                nil [1959 2299])
+            ("logged" function (:arguments 
+              ( ("log_on" variable nil (reparse-symbol function_parameters) [2312 2318]))              ) nil [2301 2930])
+            ("context_string" function (:arguments 
+              ( ("api_object" variable nil (reparse-symbol function_parameters) [2951 2961]))              ) nil [2932 3841])
+            ("guard" function
+               (:documentation "
+    Decorator for methods that can be called only under certain conditions.
+
+    Before the method is called, guarding_functions are invoked in their order
+    with the same arguments as the method.  They can check for validity of the
+    call and raise an exception if the call shouldn't be permitted.
+
+    :param guarding_functions: functions to call with the decorated method
+      arguments before the decorated method is actually called
+    "
+                :arguments 
+                  ( ("guarding_functions" variable nil (reparse-symbol function_parameters) [3853 3872]))                  )
+                nil [3843 4530])
+            ("method" function
+               (:documentation "
+    Decorate an instance method, and return a response according to the
+    outcome of the call.
+
+    If the method returns None, return a plain success response.
+    If the method wants to augment the success response, it could return
+    a dict. The dict items will be added to the success response.
+    The method could override the success response message this way.
+
+    If the method raises a RccpXuanYuanException or one subclass, the decorator
+    will produce the corresponding error response.
+    If the method raises any other exception, the decorator will produce a
+    general exception response with the details of the original error.
+    "
+                :arguments 
+                  ( ("func" variable nil (reparse-symbol function_parameters) [4554 4558])
+                    ("args" variable nil (reparse-symbol function_parameters) [4560 4565])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [4567 4575]))                  
+                :decorators 
+                  ( ("decorator" function (:type "decorator") nil nil))                  )
+                nil [4532 6149]))          
+      :file "api.py"
+      :pointmax 6149
+      :fsize 6262
+      :lastmodtime '(23927 743 628316 384000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+virtual device interface
+\"\"\"" code nil nil [1 33])
+            ("inspect" include nil nil [35 49])
+            ("rccpxuanyuan.common.exception" include nil nil [51 109])
+            ("rccpxuanyuan.virt.vmdevices" include nil nil [110 154])
+            ("VMDeviceException" type
+               (:documentation "
+    虚拟设备层异常
+    "
+                :superclasses ("ContextException")
+                :members 
+                  ( ("code" variable nil (reparse-symbol indented_block_body) [232 240])
+                    ("message" variable nil (reparse-symbol indented_block_body) [245 290]))                  
+                :type "class")
+                nil [157 291])
+            ("VMDeviceAliasNameConflict" type
+               (:documentation "
+    虚拟设备别名冲突
+    "
+                :superclasses ("VMDeviceException")
+                :members 
+                  ( ("code" variable nil (reparse-symbol indented_block_body) [378 386])
+                    ("message" variable nil (reparse-symbol indented_block_body) [391 446]))                  
+                :type "class")
+                nil [293 447])
+            ("VMDeviceAliasNameError" type
+               (:documentation "
+    虚拟设备别名错误
+    "
+                :superclasses ("VMDeviceException")
+                :members 
+                  ( ("code" variable nil (reparse-symbol indented_block_body) [531 539])
+                    ("message" variable nil (reparse-symbol indented_block_body) [544 596]))                  
+                :type "class")
+                nil [449 597])
+            ("_get_module_classes" function
+               (:documentation "
+    定义：获取python模块内类列表
+    "
+                :arguments 
+                  ( ("module" variable nil (reparse-symbol function_parameters) [623 629]))                  )
+                nil [599 821])
+            ("_regist_device" function (:documentation "
+    定义：扫描virt.devices.core模块中虚拟设备列表并进行注册
+    :return:返回设备别名和设备类映射字典，如
+    {
+        \"cpu\": CPU,
+        \"disk\": Disk,
+        ......
+    }
+    ") nil [823 1358])
+            ("DeviceMap" type
+               (:documentation "
+    define: virtual device map class
+    duty:
+        1. check core device naming conflict
+        2. register core device
+        3. map virtual device
+    "
+                :members 
+                  ( ("_dev_map" variable nil (reparse-symbol indented_block_body) [1552 1579])
+                    ("get_device_cls" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [1621 1624])
+                            ("alias" variable nil (reparse-symbol function_parameters) [1626 1631]))                          )
+                        (reparse-symbol indented_block_body) [1585 1831]))                  
+                :type "class")
+                nil [1360 1831]))          
+      :file "interface.py"
+      :pointmax 1831
+      :fsize 1968
+      :lastmodtime '(23927 5410 915167 617000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+虚拟机模型
+\"\"\"" code nil nil [1 14])
+            ("threading" include nil nil [16 32])
+            ("rccpxuanyuan.virt" include nil nil [34 73])
+            ("rccpxuanyuan.virt.vmdevices" include nil nil [74 123])
+            ("rccpxuanyuan.virt.libvirt" include nil nil [124 169])
+            ("rccpxuanyuan.common" include nil nil [170 210])
+            ("rccpxuanyuan.common" include nil nil [211 246])
+            ("rccpxuanyuan.common.exception" include nil nil [247 305])
+            ("rccpxuanyuan.common.cache" include nil nil [306 357])
+            ("rccpxuanyuan.common" include nil nil [358 399])
+            ("DESCRIPTION" variable nil nil [402 424])
+            ("VM" type
+               (:documentation "
+    虚拟机模型
+    "
+                :members 
+                  ( ("_CONF" variable nil (reparse-symbol indented_block_body) [468 570])
+                    ("_VM_XML" variable nil (reparse-symbol indented_block_body) [576 1338])
+                    ("create" function
+                       (:documentation "
+        定义：虚拟机创建启动接口
+        参数 conf:虚拟机上层模型参数
+        类型： 字典
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [1372 1375])
+                            ("conf" variable nil (reparse-symbol function_parameters) [1377 1381]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1344 2527])
+                    ("" code nil (reparse-symbol indented_block_body) [2564 2600])
+                    ("" code nil (reparse-symbol indented_block_body) [2622 2661])
+                    ("_set_default_conf" function
+                       (:documentation "
+        定义：检查并设置默认配置
+        "
+                        :arguments 
+                          ( ("conf" variable nil (reparse-symbol function_parameters) [2688 2692]))                          )
+                        (reparse-symbol indented_block_body) [2666 2848])
+                    ("_is_device_group" function
+                       (:documentation "
+        定义：判断设备配置参数对应设备是否为一组设备参数
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [2891 2894])
+                            ("dev_conf" variable nil (reparse-symbol function_parameters) [2896 2904]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2853 3007])
+                    ("_set_device_dom" function
+                       (:documentation "
+        定义：组装虚拟设备domain
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [3049 3052])
+                            ("conf" variable nil (reparse-symbol function_parameters) [3054 3058])
+                            ("device" variable nil (reparse-symbol function_parameters) [3060 3066])
+                            ("vm_dom" variable nil (reparse-symbol function_parameters) [3068 3074]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [3012 3364])
+                    ("_install_devices" function
+                       (:documentation "
+        定义：配置虚拟设备允许环境
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [3407 3410])
+                            ("conf" variable nil (reparse-symbol function_parameters) [3412 3416]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [3369 3835])
+                    ("_start" function
+                       (:documentation "
+        定义：libvirt虚拟机创建启动接口
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [3868 3871])
+                            ("vm_dom" variable nil (reparse-symbol function_parameters) [3873 3879]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [3840 4121])
+                    ("shutdown" function
+                       (:documentation "虚机关闭, 虚机断电, 虚机重启
+        @vm_id: string, required
+        @flags: str, optional, reboot: 重启, shutdown: 关闭, destroy: 断电
+        职责:
+        1. 获取指定虚机的 libvirt 参数(Libvirt.get_vm_xml())
+        2. 执行虚机关闭/断电/重启命令(VM._shutdown())
+        3. 等待虚机关闭/重启
+        4. 卸载虚拟设备(VM._uninstall_devices())
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [4156 4159])
+                            ("vm_id" variable nil (reparse-symbol function_parameters) [4161 4166])
+                            ("flags" variable nil (reparse-symbol function_parameters) [4168 4173]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [4126 4701])
+                    ("_shutdown" function
+                       (:documentation "虚机关闭接口
+        @vm_id: string, required
+        @flags: int, required
+        调用:
+        1. 关闭: Libvirt.shutdown_vm()
+        2. 断电: Libvirt.destroy_vm()
+        3. 重启: Libvirt.reboot()
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [4737 4740])
+                            ("vm_id" variable nil (reparse-symbol function_parameters) [4742 4747])
+                            ("flags" variable nil (reparse-symbol function_parameters) [4749 4754]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [4706 5159])
+                    ("_uninstall_device" function
+                       (:documentation "卸载单个虚拟设备"
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [5203 5206])
+                            ("device_name" variable nil (reparse-symbol function_parameters) [5208 5219])
+                            ("device_xml" variable nil (reparse-symbol function_parameters) [5221 5231]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5164 5435])
+                    ("_uninstall_devices" function
+                       (:documentation "卸载虚拟设备
+        根据获取的虚机 xml 查找虚拟设备并卸载
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [5480 5483])
+                            ("vm_xml" variable nil (reparse-symbol function_parameters) [5485 5491]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5440 6260]))                  
+                :type "class")
+                nil [426 6260]))          
+      :file "vm.py"
+      :pointmax 6260
+      :fsize 6677
+      :lastmodtime '(23927 3039 6671 645000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+虚拟设备实现
+\"\"\"" code nil nil [1 15])
+            ("__future__" include nil nil [17 55])
+            ("__future__" include nil nil [56 87])
+            ("urllib.parse" include nil nil [89 122])
+            ("rccpxuanyuan.common" include nil nil [124 164])
+            ("rccpxuanyuan.common" include nil nil [165 200])
+            ("rccpxuanyuan.common" include nil nil [201 241])
+            ("rccpxuanyuan.common.exception" include nil nil [242 306])
+            ("rccpxuanyuan.common.exception" include nil nil [307 375])
+            ("rccpxuanyuan.common.exception" include nil nil [376 438])
+            ("rccpxuanyuan.common.exception" include nil nil [439 502])
+            ("rccpxuanyuan.common.exception" include nil nil [503 560])
+            ("rccpxuanyuan.common.exception" include nil nil [561 619])
+            ("rccpxuanyuan.virt.vmdevices.posdriver" include nil nil [620 733])
+            ("ClearVHostSCSIControllerFailed" variable nil nil [736 778])
+            ("_DISK_NAMESPACE" variable nil nil [781 843])
+            ("configure_domain" function (:arguments 
+              ( ("conf" variable nil (reparse-symbol function_parameters) [867 871])
+                ("domain" variable nil (reparse-symbol function_parameters) [873 879]))              ) nil [846 1113])
+            ("Base" type
+               (:documentation "
+    虚拟设备基类
+    职责：
+        1. 声明虚拟设备公共接口和成员变量，支持上层使用
+    约定：
+        1. 在继承Base后，虚拟设备需要设置设备自身的别名，别名是指上层模型和
+           libvirt模型中设备的名字，比如CPU设备对应别名有(\"cpu\", \"vcpu\")。设置别
+           名后，上层可以通过别名查找对应设备类。
+    "
+                :members 
+                  ( ("ALIAS_NAME" variable nil (reparse-symbol indented_block_body) [1345 1360])
+                    ("_CONF" variable nil (reparse-symbol indented_block_body) [1366 1376])
+                    ("_DEV_GROUP_XML" variable nil (reparse-symbol indented_block_body) [1382 1401])
+                    ("set_default_conf" function
+                       (:documentation "
+        定义：根据虚拟设备配置组配置，设置其中默认参数。
+        职责：
+            1. 检查设备配置组合法性；
+            2. 根据上层设备配置设置改配置缺省字段；
+            3. 提取公共参数
+        参数 conf：上层设备配置；
+        类型：泛型根据具体设备类约定入参类型；
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [1445 1448])
+                            ("conf" variable nil (reparse-symbol function_parameters) [1450 1454]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1407 1661])
+                    ("get_mutex_resource" function
+                       (:documentation "
+        定义：根据虚拟设备配置，获取设备多线程互斥资源。
+        职责：
+            1. 根据上层设备配置返回设备互斥资源标识。
+        参数 conf：上层设备配置；
+        类型：泛型根据具体设备类约定入参类型；
+        返回值：设备互斥资源标识组合。
+        类型：字符串列表；
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [1707 1710])
+                            ("conf" variable nil (reparse-symbol function_parameters) [1712 1716]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1667 1936])
+                    ("set_dev_group_xml" function
+                       (:documentation "
+        定义：根据虚拟设备配置组配置，设置设备组总线/公共配置。
+        职责：
+            1. 根据上层一组设备配置，设置对应底层设备libvirt配置；
+        参数 conf_group：同set_default_conf接口描述；
+        类型：列表；
+        参数 par_dev_dom：设置一组同类设备；
+        类型：xml.etree.ElementTree对象；
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [1980 1983])
+                            ("conf_group" variable nil (reparse-symbol function_parameters) [1985 1995])
+                            ("par_dev_dom" variable nil (reparse-symbol function_parameters) [1997 2008]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1941 2258])
+                    ("set_xml" function
+                       (:documentation "
+        定义：单一虚拟设备配置翻译接口。
+        职责：
+            1. 翻译上层设备模型配置为libvirt XML对象；
+            2. 设置设备libvirt XML缺省参数；
+        参数 conf：上层单一设备模型配置；
+        类型：字典{}；
+        参数 dev_dom：底层设备libvirt参数；
+        类型：xml.etree.ElementTree；
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [2292 2295])
+                            ("conf" variable nil (reparse-symbol function_parameters) [2297 2301])
+                            ("dev_dom" variable nil (reparse-symbol function_parameters) [2303 2310]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2263 2564])
+                    ("setup_dev_group" function
+                       (:documentation "
+        定义：一组虚拟设备安装接口。
+        职责：
+            1. 完成一组虚拟设备依赖的环境配置。
+        约定：
+            1. 支持二次安装覆盖之前的配置内容。
+        参数 conf_group：同set_default_conf接口描述；
+        类型：列表；
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [2606 2609])
+                            ("conf_group" variable nil (reparse-symbol function_parameters) [2611 2621]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2569 2819])
+                    ("setup" function
+                       (:documentation "
+        定义：单一虚拟设备安装接口。
+        职责：
+            1. 完成虚拟设备依赖的环境配置。
+        约定：
+            1. 支持二次安装覆盖之前的配置内容。
+        参数参考set_xml接口。
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [2851 2854])
+                            ("conf" variable nil (reparse-symbol function_parameters) [2856 2860]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2824 3019])
+                    ("teardown" function
+                       (:documentation "
+        定义：单一虚拟设备卸载接口。
+        职责：
+            1. 完成虚拟设备依赖的环境清理。
+        参数参考set_xml接口。
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [3054 3057])
+                            ("dev_dom" variable nil (reparse-symbol function_parameters) [3059 3066]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [3024 3181]))                  
+                :type "class")
+                nil [1115 3181])
+            ("CPU" type
+               (:documentation "虚拟CPU"
+                :superclasses ("Base")
+                :members 
+                  ( ("ALIAS_NAME" variable nil (reparse-symbol indented_block_body) [3221 3249])
+                    ("_KEY" variable nil (reparse-symbol indented_block_body) [3254 3266])
+                    ("_TAG_NAME" variable nil (reparse-symbol indented_block_body) [3271 3289])
+                    ("set_default_conf" function
+                       (:documentation "检查 conf 中的字段, 补充默认字段
+        @conf: dict, required
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [3333 3336])
+                            ("conf" variable nil (reparse-symbol function_parameters) [3338 3342]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [3295 3672])
+                    ("set_xml" function
+                       (:documentation "
+        将 vcpu 配置参数转换成 xml
+        @cpu_conf: dict, required
+        @dev_dom: xml.etree.Element, optional
+        根据 conf 查找 default 对应的值是否存在, 若不存在, 则 append
+                                                 若存在, 则 update
+        eg.
+        dev_dom: </default>
+        vcpu_conf: {\"cpu\": 4}
+        @ret: <vcpu>4</vcpu>
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [3706 3709])
+                            ("vcpu_conf" variable nil (reparse-symbol function_parameters) [3711 3720])
+                            ("dev_dom" variable nil (reparse-symbol function_parameters) [3722 3729]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [3677 4198]))                  
+                :type "class")
+                nil [3183 4198])
+            ("Memory" type
+               (:documentation "虚拟内存"
+                :superclasses ("Base")
+                :members 
+                  ( ("ALIAS_NAME" variable nil (reparse-symbol indented_block_body) [4240 4264])
+                    ("_KEY" variable nil (reparse-symbol indented_block_body) [4269 4284])
+                    ("_TAG_NAME" variable nil (reparse-symbol indented_block_body) [4289 4309])
+                    ("set_default_conf" function
+                       (:documentation "检查 conf 中的字段, 补充默认字段
+        @conf: dict, required
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [4353 4356])
+                            ("conf" variable nil (reparse-symbol function_parameters) [4358 4362]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [4315 4712])
+                    ("set_xml" function
+                       (:documentation "
+        将虚拟内存配置参数转换成 xml
+        @mem: dict, required
+
+        eg.
+        mem_conf: {\"memory\": 4096}
+        dev_dom: <default />
+        @ret: <memory unit=\"MiB\">4096</memory>
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [4746 4749])
+                            ("mem_conf" variable nil (reparse-symbol function_parameters) [4751 4759])
+                            ("dev_dom" variable nil (reparse-symbol function_parameters) [4761 4768]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [4717 5124]))                  
+                :type "class")
+                nil [4200 5124])
+            ("OS" type
+               (:documentation "虚机系统"
+                :superclasses ("Base")
+                :members 
+                  ( ("ALIAS_NAME" variable nil (reparse-symbol indented_block_body) [5162 5193])
+                    ("_KEY" variable nil (reparse-symbol indented_block_body) [5198 5215])
+                    ("_TAG" variable nil (reparse-symbol indented_block_body) [5220 5231])
+                    ("set_default_conf" function
+                       (:documentation "检查 conf 中的字段, 补充默认字段
+        @conf: dict, required
+        @ret: dict
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [5275 5278])
+                            ("conf" variable nil (reparse-symbol function_parameters) [5280 5284]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5237 5826])
+                    ("set_xml" function
+                       (:documentation "虚拟机系统模型配置参数转换成 xml
+        @boot_conf: dict, required
+        引导设备可选值有 cdrom 和 hd, 默认为 hd
+
+        eg.
+        boot_conf: {\"boot_dev\": \"hd/cdrom\"}
+        dev_dom: <default />
+        @ret: <os>
+                <type arch='x86_64' machine='pc-0.14'>hvm</type>
+                <boot dev=\"hd\">
+              </os>
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [5860 5863])
+                            ("boot_conf" variable nil (reparse-symbol function_parameters) [5865 5874])
+                            ("dev_dom" variable nil (reparse-symbol function_parameters) [5876 5883]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5831 6687]))                  
+                :type "class")
+                nil [5126 6687])
+            ("Interface" type
+               (:documentation "虚拟网卡
+    <interface type='bridge'>
+      <source bridge=$src_br/>
+      <virtualport type='openvswitch'>
+        <parameters profileid='menial' interface_id=$interface_id/>
+      </virtualport>
+      <alias name=\"$dev_id\"/>
+    </interface>
+    "
+                :superclasses ("Base")
+                :members 
+                  ( ("ALIAS_NAME" variable nil (reparse-symbol indented_block_body) [6973 7000])
+                    ("\"\"\"
+<interface type='bridge'>
+    <source bridge='$src_br'/>
+    <virtualport type='openvswitch'>
+        <parameters profileid='menial' interface_id='$interface_id'/>
+    </virtualport>
+    <alias name='$dev_id'/>
+</interface>
+\"\"\"" code nil (reparse-symbol indented_block_body) [7028 7259])
+                    ("set_default_conf" function
+                       (:documentation "检查 conf 中的字段, 补充默认字段
+        @conf: list, required, list 中每个元素为 dict
+        @ret: list
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [7303 7306])
+                            ("conf_group" variable nil (reparse-symbol function_parameters) [7308 7318]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [7265 7801])
+                    ("set_xml" function
+                       (:documentation "虚拟网卡设备配置参数转换成 xml
+        @conf: dict, required.
+        @dev_dom: xml.etree.Element, optional
+
+        eg.
+        conf: {\"dev_id\": xxx, \"interface_id\": xxx, \"src_br\": xxx}
+        dev_dom: <Interface />
+        @ret:
+        <Interface type=\"bridge\">
+            <source bridge=xxx />
+            <virtualport type=\"openvswitch\">
+                <parameters interface_id=xxx profileid=\"menial\" />
+            </virtualport>
+            <alias name=xxx />
+        </Interface>
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [7835 7838])
+                            ("conf" variable nil (reparse-symbol function_parameters) [7840 7844])
+                            ("dev_dom" variable nil (reparse-symbol function_parameters) [7846 7853]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [7806 8531])
+                    ("set_dev_group_xml" function
+                       (:documentation "批量转换虚拟网卡 conf 为 xml
+        @conf_group: list, 每个元素为 dict, 对应一个网卡设备
+        @dev_dom: xml.etree.Element
+
+        eg.
+        conf_group: [
+            {\"dev_id\": xxx, \"interface_id\": xxx, \"src_br\": xxx},
+            {\"dev_id\": xxx, \"interface_id\": xxx, \"src_br\": xxx},
+        ]
+        par_dev_dom:
+            <domain>
+              <devices />
+            <domain/>
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [8575 8578])
+                            ("conf_group" variable nil (reparse-symbol function_parameters) [8580 8590])
+                            ("dom_xml" variable nil (reparse-symbol function_parameters) [8592 8599]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [8536 9232]))                  
+                :type "class")
+                nil [6689 9232])
+            ("CDROM" type
+               (:documentation "虚拟光驱"
+                :superclasses ("Base")
+                :members 
+                  ( ("ALIAS_NAME" variable nil (reparse-symbol indented_block_body) [9273 9296])
+                    ("_FTP_PORT" variable nil (reparse-symbol indented_block_body) [9301 9315])
+                    ("_SFTP_PORT" variable nil (reparse-symbol indented_block_body) [9320 9335])
+                    ("\"\"\"
+<disk device=\"cdrom\" type='$dev_type'>
+    <source file='$file_path' />
+    <driver name=\"qemu\" type=\"raw\" />
+    <target bus=\"ide\" dev='$target_dev' />
+    <readonly />
+    <serial>'$dev_id'</serial>
+</disk>
+\"\"\"" code nil (reparse-symbol indented_block_body) [9365 9581])
+                    ("\"\"\"
+<disk device=\"cdrom\" type='$dev_type'>
+    <source name='$file_path' protocol='$protocol'>
+        <host name='$name' port='$port' />
+    </source>
+    <driver name=\"qemu\" type=\"raw\" />
+    <target bus=\"ide\" dev='$target_dev' />
+    <readonly />
+    <serial />
+</disk>
+\"\"\"" code nil (reparse-symbol indented_block_body) [9612 9888])
+                    ("set_default_conf" function
+                       (:documentation "检查单项配置的合法性, 填充默认值
+        @conf_group: dict, required
+
+        若是 boot 设备, 则从 hda 开始编号
+        否则, 从 hde 往前编号
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [9932 9935])
+                            ("conf_group" variable nil (reparse-symbol function_parameters) [9937 9947]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [9894 11370])
+                    ("set_xml" function
+                       (:documentation "虚拟光驱设备配置参数转换成 xml
+        @cdrom_conf: dict, required
+        @dev_dom: rccpxuanyuan.virt.vmxml.Element, optional
+
+        1. 若 key-value 形式为 str-list, 则将 domain 这个节点传给 dev_dom,
+           上层不去区分是什么设备
+        2. 若 key-value 形式为 str-str, 则将当前节点传进来
+        3. 根据 conf, 查找 dev_dom 中对应节点和值是否存在
+           若不存在, 则 append
+           若存在, 则 update
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [11404 11407])
+                            ("cdrom_conf" variable nil (reparse-symbol function_parameters) [11409 11419])
+                            ("dev_dom" variable nil (reparse-symbol function_parameters) [11421 11428]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [11375 12421])
+                    ("_parse_local_filepath" function
+                       (:documentation "返回本地文件路径, eg:
+        /test/base/RCOS-9.2.0-20190422172520.iso
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [12469 12472])
+                            ("parsed_path" variable nil (reparse-symbol function_parameters) [12474 12485]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [12426 12601])
+                    ("_parse_remote_filepath" function
+                       (:documentation "解析远程光驱设备路径
+        standard:
+        ftp://[user ID:password@]<host name>[:port]/[path name/]
+
+        ftp://username:passwd@ip:port//home/base/RCOS-9.2.0-20190422172520.iso
+        sftp://username:passwd@ip:port//home/base/RCOS-9.2.0-20190422172520.iso
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [12650 12653])
+                            ("parsed_path" variable nil (reparse-symbol function_parameters) [12655 12666]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [12606 13642])
+                    ("set_dev_group_xml" function
+                       (:documentation "批量虚拟设备统一处理接口
+        获取 domxml, 根据 domxml 的信息完善 conf
+        @conf: list, required
+        @domxml: xml.etree.ElementTree.Element, required
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [13686 13689])
+                            ("conf_group" variable nil (reparse-symbol function_parameters) [13691 13701])
+                            ("domxml" variable nil (reparse-symbol function_parameters) [13703 13709]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [13647 14107])
+                    ("_is_local_iso" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [14147 14150])
+                            ("file_path" variable nil (reparse-symbol function_parameters) [14152 14161]))                          )
+                        (reparse-symbol indented_block_body) [14112 14244]))                  
+                :type "class")
+                nil [9234 14244])
+            ("Disk" type
+               (:documentation "
+    virtual disk model
+    "
+                :superclasses ("Base")
+                :members 
+                  ( ("ALIAS_NAME" variable nil (reparse-symbol indented_block_body) [14308 14401])
+                    ("_CONF" variable nil (reparse-symbol indented_block_body) [14407 14610])
+                    ("_set_booter" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("conf_group" variable nil (reparse-symbol function_parameters) [14971 14981]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [14937 15416])
+                    ("_set_vdiskid" function
+                       (:documentation "
+        conf = {
+            \"disk_path\": \"1/2\"}
+        parse conf = {
+            \"vdisk_id\": \"1\",
+            \"volume_id\": \"2\",
+            \"vdisk_value\": \"socket,id=spdk_vhost_scsi, path=/usr/vdisk/1\"}
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [15455 15458])
+                            ("conf_group" variable nil (reparse-symbol function_parameters) [15460 15470]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [15421 16403])
+                    ("" code nil (reparse-symbol indented_block_body) [16439 16497])
+                    ("" code nil (reparse-symbol indented_block_body) [16519 16567])
+                    ("set_default_conf" function
+                       (:documentation "
+        定义：根据上层硬盘设备配置组参数，设置其中默认参数lun_id, vdisk_id,
+              vdisk_value, volume_id。
+        职责：
+            1. 检查设备配置组合法性，主要检查所有虚拟硬盘使用相同的vdisk_id；
+            2. 根据设备配置组字段设置默认配置,
+                主要解析disk_path和boot字段，设置vdisk_id,
+                vdisk_value, volume_id, lun_id
+            3. 提取公共参数
+        参数 conf_group：上层设备配置组；
+        类型：列表；
+        示例：[
+            {
+                \"dev_id\": \"b4e5f302-7c6c-1000-89d5-dfgdffffffff\",
+                \"disk_path\": \"1/2\",
+                \"boot\": True,
+            }
+        ]
+        设置后：[
+            {
+                \"dev_id\": \"b4e5f302-7c6c-1000-89d5-dfgdffffffff\",
+                \"disk_path\": \"1/2\",
+                \"boot\": True,
+                \"vdisk_id\": \"1\",
+                \"volume_id\": \"2\",
+                \"vdisk_value\": \"socket,id=spdk_vhost_scsi, path=/usr/vdisk/1\"}
+                \"lun_id\": 0,
+            }
+        ]
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [16593 16596])
+                            ("conf" variable nil (reparse-symbol function_parameters) [16598 16602]))                          )
+                        (reparse-symbol indented_block_body) [16572 17607])
+                    ("" code nil (reparse-symbol indented_block_body) [17647 17685])
+                    ("get_mutex_resource" function
+                       (:documentation "
+        定义：根据虚拟硬盘配置，获取虚拟硬盘VDisk互斥资源。
+        职责：
+            1. 根据上层虚拟硬盘配置返回虚拟硬盘试用VDisk标识。
+        参数 conf：同set_default_conf中conf_group；
+        返回值：虚拟硬盘互斥资源vdisk_id；
+        类型：字符串列表；
+        "
+                        :arguments 
+                          ( ("conf" variable nil (reparse-symbol function_parameters) [17713 17717]))                          )
+                        (reparse-symbol indented_block_body) [17690 17966])
+                    ("" code nil (reparse-symbol indented_block_body) [18005 18051])
+                    ("set_dev_group_xml" function
+                       (:documentation "
+        定义：根据虚拟设备配置组配置，设置设备组总线/公共配置。
+        职责：
+            1. 根据设备配置组参数，设置设备组总线/公共配置；
+        参数 conf_group：上层设备配置组；
+        类型：列表；
+        参数 dev_dom：想要设置的设备domain对象；
+        类型：xml.etree.ElementTree对象；
+        示例：
+        <domain>
+        </domain>
+        设置后：
+        <domain xmlns:qemu=\"http://libvirt.org/schemas/domain/qemu/1.0\">
+          <qemu:commandline>
+            <qemu:arg value='-chardev'/>
+            <qemu:arg value='$vdisk_value'/>
+            <qemu:arg value='-device'/>
+            <qemu:arg value='vhost-user-scsi-pci,id=scsi,
+                             chardev=spdk_vhost_scsi,num_queues=1'/>
+            <qemu:evn vdisk_id=\"$vdisk_id\"/>
+          </qemu:commandline>
+        </domain>
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [18078 18081])
+                            ("conf_group" variable nil (reparse-symbol function_parameters) [18083 18093])
+                            ("par_dev_dom" variable nil (reparse-symbol function_parameters) [18095 18106]))                          )
+                        (reparse-symbol indented_block_body) [18056 19030])
+                    ("" code nil (reparse-symbol indented_block_body) [19067 19099])
+                    ("" code nil (reparse-symbol indented_block_body) [19120 19149])
+                    ("_remove_vhostscsilun" function
+                       (:documentation "
+        定义：封装POSDriver移除lun接口
+        职责：
+            1. 执行POSDriver.remove_vhostscsilun接口
+            1. 封装POSDriver.remove_vhostscsilun异常，VDisk接口允许移除lun失败
+        "
+                        :arguments 
+                          ( ("vdisk_id" variable nil (reparse-symbol function_parameters) [19179 19187]))                          )
+                        (reparse-symbol indented_block_body) [19154 19419])
+                    ("" code nil (reparse-symbol indented_block_body) [19455 19487])
+                    ("" code nil (reparse-symbol indented_block_body) [19509 19551])
+                    ("setup_dev_group" function
+                       (:documentation "
+        定义：虚拟一组硬盘安装接口。
+        职责：
+            1. 完成虚拟所有硬盘的环境依赖。
+        约定：
+            1. 支持二次安装覆盖之前的配置内容。
+        参数参考set_xml接口。
+        注意：
+            本接口非多线程安全，vhostscsicontroller的配置会被弄脏
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [19576 19579])
+                            ("conf_group" variable nil (reparse-symbol function_parameters) [19581 19591]))                          )
+                        (reparse-symbol indented_block_body) [19556 20222])
+                    ("" code nil (reparse-symbol indented_block_body) [20258 20290])
+                    ("" code nil (reparse-symbol indented_block_body) [20311 20343])
+                    ("" code nil (reparse-symbol indented_block_body) [20365 20409])
+                    ("teardown" function
+                       (:documentation "
+        定义：虚拟硬盘卸载接口。
+        职责：
+            1. 完成虚拟硬盘依赖的环境清理。
+        参数参考set_xml接口。
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [20427 20430])
+                            ("dev_dom" variable nil (reparse-symbol function_parameters) [20432 20439]))                          )
+                        (reparse-symbol indented_block_body) [20414 20806])
+                    ("" code nil (reparse-symbol indented_block_body) [20844 20861])
+                    ("_parse_disk_path" function (:arguments 
+                      ( ("cls" variable nil (reparse-symbol function_parameters) [20887 20890])
+                        ("disk_path" variable nil (reparse-symbol function_parameters) [20892 20901]))                      ) (reparse-symbol indented_block_body) [20866 21074])
+                    ("compose_vdisk_id" function
+                       (:documentation "
+        使用底层P-OS存储中的池ID和vDisk ID来合成vdisk_id。
+        "
+                        :arguments 
+                          ( ("original_pool_id" variable nil (reparse-symbol function_parameters) [21100 21116])
+                            ("original_vdisk_id" variable nil (reparse-symbol function_parameters) [21118 21135]))                          )
+                        (reparse-symbol indented_block_body) [21079 21269])
+                    ("decompose_vdisk_id" function
+                       (:documentation "
+        从已合成的vdisk_id中分解出底层P-OS存储中的池ID和vDisk ID。
+        "
+                        :arguments 
+                          ( ("vdisk_id" variable nil (reparse-symbol function_parameters) [21298 21306]))                          )
+                        (reparse-symbol indented_block_body) [21275 21559]))                  
+                :type "class")
+                nil [14246 21559])
+            ("Graphics" type
+               (:documentation "暂时使用默认 XML"
+                :superclasses ("Base")
+                :members 
+                  ( ("ALIAS_NAME" variable nil (reparse-symbol indented_block_body) [21609 21635])
+                    ("\"\"\"
+<graphics type='vnc' port='5901' autoport='yes' passwd='123456'>
+    <listen address='0.0.0.0' type='address' />
+</graphics>
+\"\"\"" code nil (reparse-symbol indented_block_body) [21662 21794])
+                    ("\"\"\"
+<video>
+    <model type='qxl' />
+</video>
+\"\"\"" code nil (reparse-symbol indented_block_body) [21818 21867])
+                    ("set_default_conf" function
+                       (:documentation "检查 conf 中的字段, 补充默认字段
+        @conf: dict, required
+        @ret: dict
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [21911 21914])
+                            ("conf" variable nil (reparse-symbol function_parameters) [21916 21920]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [21873 22036])
+                    ("set_dev_group_xml" function
+                       (:documentation "图形界面 xml 配置
+        @graphics_conf: dict, required
+        @ret:
+        <graphics type=\"spice\" port=5912 listen=\"0.0.0.0\" defaultMode=\"insecure\" passwd=\"\"
+          <listen address=\"0.0.0.0\" type=\"address\" />
+        </graphics>
+        <video>
+          <model type=\"qxl\" />
+        </video>
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [22080 22083])
+                            ("graphics_conf" variable nil (reparse-symbol function_parameters) [22085 22098])
+                            ("dom_xml" variable nil (reparse-symbol function_parameters) [22100 22107]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [22041 22810]))                  
+                :type "class")
+                nil [21561 22810]))          
+      :file "core.py"
+      :pointmax 22810
+      :fsize 25677
+      :lastmodtime '(23927 3283 545939 615000)
+      :unmatched-syntax '((NEWLINE 14931 . 14932) (RPAREN 14930 . 14931) (NAME 14616 . 14630) (DEDENT 14635 . 14635) (STRING_LITERAL 14635 . 14907) (LPAREN 14914 . 14915))))
+  :file "!root!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

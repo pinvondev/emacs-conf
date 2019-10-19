@@ -1,0 +1,4 @@
+/root/test.txt
+/root/#test.txt#
+/etc/yum.repos.d/CentOS-Media.repo
+/etc/yum.repos.d/#CentOS-Media.repo#

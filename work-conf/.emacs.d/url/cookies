@@ -1,0 +1,33 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '((".baidu.com"
+  [url-cookie "BAIDUID" "DD90B1D2430EB0B6D7F3F15F2E58A61B:FG=1" "31 Dec 37 23:55:55 [GMT]" "/" ".baidu.com" nil]
+  [url-cookie "max-age" "2147483647" "31 Dec 37 23:55:55 [GMT]" "/" ".baidu.com" nil]
+  [url-cookie "BIDUPSID" "DD90B1D2430EB0B6D7F3F15F2E58A61B" "31 Dec 37 23:55:55 [GMT]" "/" ".baidu.com" nil]
+  [url-cookie "PSTM" "1564378119" "31 Dec 37 23:55:55 [GMT]" "/" ".baidu.com" nil])
+ ("www.baidu.com"
+  [url-cookie "NOJS" "1" "21-Jul-2049 05:29:49.00 GMT" "/" "www.baidu.com" nil])
+ (".google.cn"
+  [url-cookie "NID" "188=m7pb0w_nAXsRMYTWB1sa2sPkWhtlZpxyotvLq53cY81blSLMj7D31DNwrFPXiqn_tDP9kFZ71FjwkNiMhgnqot921Rpv8xfNsvgq4F7mdVT4eujRk2crTIbRosDrpol84b_v63N70O10vxlKMVDqmLFiMjC_cWDkZGsPmeNWTTM" "28-Jan-2020 05:57:43.00 GMT" "/" ".google.cn" nil]
+  [url-cookie "HttpOnly" nil "28-Jan-2020 05:57:43.00 GMT" "/" ".google.cn" nil])
+ (".douban.com"
+  [url-cookie "ll" "118200" "28-Jul-2020 06:02:52.00 GMT" "/" ".douban.com" nil]
+  [url-cookie "bid" "s6FcBVJdFfs" "28 Jul 20 06:02:53 [GMT]" "/" ".douban.com" nil])
+ ("www.jianshu.com"
+  [url-cookie "if_shakespeare" "1" "22 Dec 19 09:35:23 [GMT]" "/p" "www.jianshu.com" nil])
+ (".google.com"
+  [url-cookie "HttpOnly" nil "25-Jan-2020 04:15:30.00 GMT" "/search" ".google.com" nil]
+  [url-cookie "CGIC" "IgMqLyo" "25-Jan-2020 04:15:30.00 GMT" "/search" ".google.com" nil]
+  [url-cookie "HttpOnly" nil "25-Jan-2020 04:15:30.00 GMT" "/complete/search" ".google.com" nil]
+  [url-cookie "CGIC" "IgMqLyo" "25-Jan-2020 04:15:30.00 GMT" "/complete/search" ".google.com" nil]
+  [url-cookie "NID" "188=oLg8XS6Jv2EwB2EcWPLJrVPldgITC0pFUBfscnXhZWjRmNY80h5ab6cbar12_b8KuuNE9oU8l4BVic-d9HXzDJMvUAN5On87k-hZZ73TLI5VYNWeEkiOjvnPOwKHJMqtGdchiUM0oibkJzdsrnWL4CCR-jCqxL2DsCvU4El8tcg" "28-Jan-2020 04:15:30.00 GMT" "/" ".google.com" nil]))
+)
+(setq url-cookie-secure-storage
+ 'nil)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:

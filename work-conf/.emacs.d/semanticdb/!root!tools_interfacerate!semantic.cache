@@ -1,0 +1,187 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+读取并提取api文档数据
+\"\"\"" code nil nil [16 36])
+            ("os" include nil nil [37 46])
+            ("pandas" include nil nil [48 67])
+            ("pandas" include nil nil [68 96])
+            ("common_functions" include nil nil [98 127])
+            ("float_to_string" function
+               (:documentation "
+    浮点类型转换为字符串类型
+    应用场景：api文档中的返回码是float型，在表与表关联的时候存在问题
+    因此需要将api文档中的返回码取整并以字符串形式返回
+    :param float_code: float型的返回码
+    :return: 字符串型且无小数位的返回码
+    "
+                :arguments 
+                  ( ("float_code" variable nil (reparse-symbol function_parameters) [150 160]))                  )
+                nil [130 493])
+            ("handle_api_file" function nil nil [495 5016]))          
+      :file "draw_data_from_testapi_file.py"
+      :pointmax 5016
+      :fsize 5767
+      :lastmodtime '(23973 25522 310871 650000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+复用函数文档
+\"\"\"" code nil nil [16 30])
+            ("os" include nil nil [31 40])
+            ("json" include nil nil [41 52])
+            ("subprocess" include nil nil [53 70])
+            ("xlrd" include nil nil [71 82])
+            ("read_json_file" function
+               (:documentation "
+    读取json文件函数
+    :param file_name: 保存各个工程路径的文件的路径+文件名
+    :return: 将文件内容加载成json格式，并返回
+    "
+                :arguments 
+                  ( ("file_name" variable nil (reparse-symbol function_parameters) [104 113]))                  )
+                nil [85 368])
+            ("update_data_source" function
+               (:documentation "
+    更新数据源
+    :param cf_infos: 配置文件中的配置信息：各个工程的jenkin路径，工程测试用例文档路径和api文档路径等
+    :return: 更新数据源：下载测试用例数据所在svn文件，api文档所在svn文件和从各个工程拉取包含测试脚本的文件夹
+    "
+                :arguments 
+                  ( ("cf_infos" variable nil (reparse-symbol function_parameters) [393 401]))                  )
+                nil [370 2828])
+            ("read_excel_file" function
+               (:documentation "
+    读取excel文件
+    :param file_excel: excel文件的路径+名称
+    :return: 返回workbook对象
+    "
+                :arguments 
+                  ( ("file_excel" variable nil (reparse-symbol function_parameters) [2850 2860]))                  )
+                nil [2830 3020])
+            ("list_complement" function
+               (:documentation "
+    存在 单元格合并导致读取到的数据只有第一个单元格是有数据 的现象，所以需要补全数据
+    在与其他表进行关联的时候可能会因为字母大小写而导致关联不上，所以全都小写
+    :param list_contain_none: 需要补全数据的list列表
+    :return: 补全，并各个元素小写的list列表
+    "
+                :arguments 
+                  ( ("list_contain_none" variable nil (reparse-symbol function_parameters) [3042 3059]))                  )
+                nil [3022 3669])
+            ("write_jelly" function
+               (:documentation "
+    将表格写进模板中
+    :param html_str: html表格字符串
+    :return: 生成一个html-interfaceratetest.jelly文件
+    "
+                :arguments 
+                  ( ("html_str" variable nil (reparse-symbol function_parameters) [3687 3695]))                  )
+                nil [3671 4166]))          
+      :file "common_functions.py"
+      :pointmax 4166
+      :fsize 4841
+      :lastmodtime '(23973 25522 267870 705000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+读取并提取测试用例脚本
+\"\"\"" code nil nil [16 35])
+            ("os" include nil nil [36 45])
+            ("pandas" include nil nil [47 66])
+            ("pandas" include nil nil [67 95])
+            ("common_functions" include nil nil [97 126])
+            ("handle_script_file" function nil nil [129 2963]))          
+      :file "draw_data_from_testscript_file.py"
+      :pointmax 2963
+      :fsize 3620
+      :lastmodtime '(23973 25583 468241 54000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+读取并提取测试用例数据
+\"\"\"" code nil nil [16 35])
+            ("os" include nil nil [36 45])
+            ("re" include nil nil [47 56])
+            ("json" include nil nil [57 68])
+            ("json.decoder" include nil nil [69 109])
+            ("pandas" include nil nil [110 129])
+            ("pandas" include nil nil [130 158])
+            ("common_functions" include nil nil [160 189])
+            ("get_rid_of_wrap" function
+               (:documentation "去掉标题中的换行或者空格"
+                :arguments 
+                  ( ("title_str" variable nil (reparse-symbol function_parameters) [212 221]))                  )
+                nil [192 314])
+            ("draw_code_from_str" function
+               (:documentation "
+    从“预期”字符串中提取返回码
+    :param string_may_contaion_code: “预期”字符串
+    :return: 返回码
+    "
+                :arguments 
+                  ( ("string_may_contaion_code" variable nil (reparse-symbol function_parameters) [339 363]))                  )
+                nil [316 673])
+            ("find_case_in_which_sheet" function
+               (:documentation "
+    寻找存储我们所需要的数据所在的那个sheet的名称
+    :param string_sheet_name: 包含该工作簿各个sheet名称的列表
+    :return: 我们所需要的数据所在的那个sheet的名称
+    "
+                :arguments 
+                  ( ("sheet_name_list_of_a_workbook" variable nil (reparse-symbol function_parameters) [704 733]))                  )
+                nil [675 1439])
+            ("draw_sheet_data" function
+               (:documentation "
+    提取某个工作表中的信息
+    :param module_name: 工程名称
+    :param sheet_object: 工作表对象
+    :param result_df_of_all_cases: 存储各个工程的测试用例信息的数据框
+    :param workbook_name: 工作簿名称
+    :return: 存储各个工程的测试用例信息的数据框
+    "
+                :arguments 
+                  ( ("module_name" variable nil (reparse-symbol function_parameters) [1461 1472])
+                    ("sheet_object" variable nil (reparse-symbol function_parameters) [1474 1486])
+                    ("result_df_of_all_cases" variable nil (reparse-symbol function_parameters) [1488 1510])
+                    ("workbook_name" variable nil (reparse-symbol function_parameters) [1512 1525]))                  )
+                nil [1441 5382])
+            ("draw_excel_data" function
+               (:documentation "
+    遍历某个工程下的测试用例文件夹
+    :param module_directory: 上一级文件夹路径
+    :param file_list_under_a_directory: 路径下的文件名列表
+    :param moudule_name: 工程名
+    :param all_cases_df:
+    :return: 存储各个工程的测试用例信息的数据框
+    "
+                :arguments 
+                  ( ("module_directory" variable nil (reparse-symbol function_parameters) [5404 5420])
+                    ("file_list_under_a_directory" variable nil (reparse-symbol function_parameters) [5422 5449])
+                    ("moudule_name" variable nil (reparse-symbol function_parameters) [5451 5463])
+                    ("all_cases_df" variable nil (reparse-symbol function_parameters) [5465 5477]))                  )
+                nil [5384 7385])
+            ("handle_case_file" function (:documentation "
+    从测试用例中提取我们需要的信息，并存储于pandas的DataFrame中。并将DataFrame导出，生成case.csv；
+    :return: 返回DataFrame
+    ") nil [7387 8403]))          
+      :file "draw_data_from_testcase_file.py"
+      :pointmax 8403
+      :fsize 10114
+      :lastmodtime '(23973 25583 426240 131000)
+      :unmatched-syntax nil))
+  :file "!root!tools_interfacerate!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

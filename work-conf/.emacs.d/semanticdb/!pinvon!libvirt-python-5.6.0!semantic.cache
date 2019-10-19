@@ -1,0 +1,2242 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("VIR_ENUM_SENTINELS" variable (:constant-flag t) nil [628 646])
+            ("Python.h" include (:system-flag t) nil [648 667])
+            ("libvirt/libvirt.h" include (:system-flag t) nil [668 696])
+            ("libvirt/virterror.h" include (:system-flag t) nil [697 727])
+            ("stddef.h" include (:system-flag t) nil [728 747])
+            ("typewrappers.h" include nil nil [748 773])
+            ("build/libvirt.h" include nil nil [774 800])
+            ("libvirt-utils.h" include nil nil [801 827])
+            ("initlibvirtmod" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1026 1031]))                  
+                :type "void")
+                nil [999 1032])
+            ("DEBUG" variable (:constant-flag t) nil [1225 1230])
+            ("getPyNodeCPUCount" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable (:type ("virConnectPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1699 1718]))                  
+                :type "int")
+                nil [1670 2207])
+            ("libvirt_virDomainBlockStats" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2453 2484])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2468 2485])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2514 2529]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [2407 3640])
+            ("libvirt_virDomainBlockStatsFlags" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3693 3724])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3708 3725])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3759 3774]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [3642 4848])
+            ("libvirt_virDomainGetCPUStats" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4897 4928])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4912 4929])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4959 4974]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [4850 8487])
+            ("libvirt_virDomainInterfaceStats" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8539 8570])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8554 8571])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8604 8619]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [8489 9994])
+            ("libvirt_virDomainMemoryStats" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10043 10074])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10058 10075])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10105 10120]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [9996 12443])
+            ("libvirt_virDomainGetSchedulerType" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12497 12528])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12512 12529])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12564 12579]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [12445 13424])
+            ("libvirt_virDomainGetSchedulerParameters" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13484 13515])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13499 13516])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13557 13572]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [13426 14613])
+            ("libvirt_virDomainGetSchedulerParametersFlags" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14678 14709])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14693 14710])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14756 14771]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [14615 15914])
+            ("libvirt_virDomainSetSchedulerParameters" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15974 16005])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15989 16006])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16047 16062]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [15916 17853])
+            ("libvirt_virDomainSetSchedulerParametersFlags" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17918 17949])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17933 17950])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17996 18011]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [17855 19994])
+            ("libvirt_virDomainSetBlkioParameters" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20050 20081])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20065 20082])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20119 20134]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [19996 21953])
+            ("libvirt_virDomainGetBlkioParameters" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22009 22040])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22024 22041])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22078 22093]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [21955 23134])
+            ("libvirt_virDomainSetMemoryParameters" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23191 23222])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23206 23223])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23261 23276]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [23136 25099])
+            ("libvirt_virDomainGetMemoryParameters" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25156 25187])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25171 25188])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25226 25241]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [25101 26285])
+            ("libvirt_virDomainSetNumaParameters" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26340 26371])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26355 26372])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26408 26423]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [26287 28238])
+            ("libvirt_virDomainGetNumaParameters" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28293 28324])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28308 28325])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28361 28376]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [28240 29414])
+            ("libvirt_virDomainSetInterfaceParameters" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29474 29505])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29489 29506])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29547 29562]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [29416 31603])
+            ("libvirt_virDomainGetInterfaceParameters" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31663 31694])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31678 31695])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31736 31751]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [31605 32955])
+            ("libvirt_virDomainGetVcpus" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33001 33032])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33016 33033])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33060 33075]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [32957 36332])
+            ("libvirt_virDomainPinVcpu" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36378 36409])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36393 36410])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36436 36451]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [36335 37319])
+            ("libvirt_virDomainPinVcpuFlags" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37369 37400])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37384 37401])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37432 37447]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [37321 38364])
+            ("libvirt_virDomainGetVcpuPinInfo" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38416 38447])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38431 38448])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38481 38496]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [38366 40592])
+            ("libvirt_virPythonErrorFuncHandler" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [48678 48736])
+            ("libvirt_virPythonErrorFuncCtxt" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [48737 48792])
+            ("libvirt_virGetLastError" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48836 48867])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48851 48868])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48893 48924])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48908 48925]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [48794 49881])
+            ("libvirt_virConnGetLastError" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49929 49960])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49944 49961])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49990 50005]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [49883 51248])
+            ("libvirt_virErrorFuncHandler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51290 51311])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [51307 51317])
+                    ("err" variable (:type ("virErrorPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51346 51362]))                  
+                :type "void")
+                nil [51250 53115])
+            ("libvirt_virRegisterErrorHandler" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("PyObject" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53167 53194])
+                    ("" variable (:type ("self" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53194 53199])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53232 53247]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [53117 54161])
+            ("virConnectCredCallbackWrapper" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cred" variable (:type ("virConnectCredentialPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54204 54233])
+                    ("ncred" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [54264 54283])
+                    ("cbdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [54314 54327]))                  
+                :type "int")
+                nil [54163 56983])
+            ("libvirt_virConnectOpenAuth" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57031 57062])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57046 57063])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57091 57106]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [56986 58304])
+            ("libvirt_virGetVersion" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58575 58606])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58590 58607])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58630 58645]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [58535 59217])
+            ("libvirt_virConnectGetVersion" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59266 59297])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59281 59298])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59328 59343]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [59219 59846])
+            ("libvirt_virConnectGetLibVersion" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61063 61094])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61078 61095])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61128 61143]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [61013 61643])
+            ("libvirt_virConnectListDomainsID" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61695 61726])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61710 61727])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61760 61775]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [61645 62900])
+            ("libvirt_virConnectListDefinedDomains" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64182 64213])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64197 64214])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64252 64267]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [64127 65584])
+            ("libvirt_virDomainSnapshotListNames" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68120 68151])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68135 68152])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68188 68203]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [68067 69484])
+            ("libvirt_virDomainSnapshotListChildrenNames" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70783 70814])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70798 70815])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70859 70874]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [70722 72259])
+            ("libvirt_virDomainRevertToSnapshot" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73619 73650])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73634 73651])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73686 73701]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [73567 74269])
+            ("libvirt_virDomainGetInfo" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74314 74345])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74329 74346])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74372 74387]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [74271 75432])
+            ("libvirt_virDomainGetState" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75478 75509])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75493 75510])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75537 75552]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [75434 76372])
+            ("libvirt_virDomainGetControlInfo" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [76424 76455])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76439 76456])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [76489 76504]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [76374 77447])
+            ("libvirt_virDomainGetBlockInfo" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77497 77528])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77512 77529])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77560 77575]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [77449 78615])
+            ("libvirt_virNodeGetInfo" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78658 78689])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78673 78690])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78714 78729]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [78617 80028])
+            ("libvirt_virNodeGetSecurityModel" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80080 80111])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80095 80112])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80145 80160]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [80030 81017])
+            ("libvirt_virDomainGetSecurityLabel" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81071 81102])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81086 81103])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81138 81153]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [81019 81997])
+            ("libvirt_virDomainGetUUID" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83404 83435])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [83419 83436])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83462 83477]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [83361 84045])
+            ("libvirt_virDomainGetUUIDString" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [84096 84127])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84111 84128])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [84160 84175]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [84047 84751])
+            ("libvirt_virDomainLookupByUUID" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [84801 84832])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84816 84833])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [84864 84879]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [84753 85459])
+            ("libvirt_virConnectListNetworks" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [85511 85542])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [85526 85543])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [85575 85590]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [85462 86881])
+            ("libvirt_virConnectListDefinedNetworks" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86940 86971])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86955 86972])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87011 87026]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [86884 88311])
+            ("libvirt_virNetworkGetUUID" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89579 89610])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89594 89611])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89638 89653]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [89535 90226])
+            ("libvirt_virNetworkGetUUIDString" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90278 90309])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [90293 90310])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90343 90358]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [90228 90939])
+            ("libvirt_virNetworkLookupByUUID" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90990 91021])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [91005 91022])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [91054 91069]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [90941 91654])
+            ("libvirt_virDomainGetAutostart" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [91705 91736])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [91720 91737])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [91768 91783]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [91657 92278])
+            ("libvirt_virNetworkGetAutostart" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [92330 92361])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92345 92362])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [92394 92409]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [92281 92915])
+            ("libvirt_virNodeGetCellsFreeMemory" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [92969 93000])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92984 93001])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [93036 93051]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [92917 94185])
+            ("libvirt_virNodeGetCPUStats" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94232 94263])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [94247 94264])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94292 94307]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [94187 95661])
+            ("libvirt_virNodeGetMemoryStats" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [95711 95742])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [95726 95743])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [95774 95789]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [95663 97160])
+            ("libvirt_virConnectListStoragePools" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [97215 97246])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [97230 97247])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [97283 97298]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [97162 98573])
+            ("libvirt_virConnectListDefinedStoragePools" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [98636 98667])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [98651 98668])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [98711 98726]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [98576 100057])
+            ("libvirt_virStoragePoolListVolumes" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [101407 101438])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101422 101439])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [101474 101489]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [101355 102800])
+            ("libvirt_virStoragePoolGetAutostart" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [104151 104182])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [104166 104183])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [104219 104234]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [104098 104742])
+            ("libvirt_virStoragePoolGetInfo" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [104792 104823])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [104807 104824])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [104855 104870]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [104744 105919])
+            ("libvirt_virStorageVolGetInfo" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [105969 106000])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [105984 106001])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106031 106046]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [105922 106976])
+            ("libvirt_virStoragePoolGetUUID" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [108183 108214])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [108198 108215])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [108246 108261]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [108135 108840])
+            ("libvirt_virStoragePoolGetUUIDString" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [108896 108927])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [108911 108928])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [108965 108980]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [108842 109588])
+            ("libvirt_virStoragePoolLookupByUUID" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [109643 109674])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [109658 109675])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [109711 109726]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [109590 110331])
+            ("libvirt_virNodeListDevices" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [110378 110409])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [110393 110410])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [110438 110453]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [110333 111810])
+            ("libvirt_virNodeDeviceListCaps" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [113163 113194])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [113178 113195])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [113226 113241]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [113115 114504])
+            ("libvirt_virSecretGetUUID" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [114549 114580])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [114564 114581])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [114607 114622]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [114506 115190])
+            ("libvirt_virSecretGetUUIDString" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [115241 115272])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [115256 115273])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [115305 115320]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [115192 115896])
+            ("libvirt_virSecretLookupByUUID" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [115946 115977])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [115961 115978])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [116009 116024]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [115898 116604])
+            ("libvirt_virConnectListSecrets" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [116655 116686])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [116670 116687])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [116718 116733]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [116607 118002])
+            ("libvirt_virSecretGetValue" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [119323 119354])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [119338 119355])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [119382 119397]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [119279 120032])
+            ("libvirt_virSecretSetValue" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [120078 120109])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [120093 120110])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [120137 120152]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [120034 120722])
+            ("libvirt_virNWFilterGetUUID" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [120769 120800])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [120784 120801])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [120829 120844]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [120724 121462])
+            ("libvirt_virNWFilterGetUUIDString" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [121515 121546])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [121530 121547])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [121581 121596]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [121464 122217])
+            ("libvirt_virNWFilterLookupByUUID" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [122269 122300])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [122284 122301])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [122334 122349]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [122219 122939])
+            ("libvirt_virConnectListNWFilters" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [122992 123023])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [123007 123024])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [123057 123072]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [122942 124365])
+            ("libvirt_virConnectListInterfaces" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [127050 127081])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [127065 127082])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [127116 127131]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [126999 128428])
+            ("libvirt_virConnectListDefinedInterfaces" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [128489 128520])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [128504 128521])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [128562 128577]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [128431 129903])
+            ("libvirt_virConnectBaselineCPU" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [131243 131274])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [131258 131275])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [131306 131321]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [131195 132612])
+            ("libvirt_virDomainGetJobInfo" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [132661 132692])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [132676 132693])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [132722 132737]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [132615 134693])
+            ("libvirt_virDomainGetBlockJobInfo" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135845 135876])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [135860 135877])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135911 135926]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [135794 137178])
+            ("libvirt_virDomainSetBlockIoTune" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [137230 137261])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [137245 137262])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [137295 137310]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [137180 139135])
+            ("libvirt_virDomainGetBlockIoTune" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [139187 139218])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [139202 139219])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [139252 139267]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [139137 140338])
+            ("libvirt_virDomainGetDiskErrors" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [140389 140420])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [140404 140421])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [140453 140468]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [140340 141926])
+            ("libvirt_module" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [144823 144865])
+            ("libvirt_dict" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [144866 144908])
+            ("getLibvirtModuleObject" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [144951 144956]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [144910 145368])
+            ("getLibvirtDictObject" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [145409 145414]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [145370 145788])
+            ("libvirt_lookupPythonFunc" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("funcname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [145834 145855]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [145791 146313])
+            ("libvirt_virConnectDomainEventCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable (:type ("virConnectPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [146473 146508])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [146492 146509])
+                    ("dom" variable (:type ("virDomainPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [146548 146565])
+                    ("event" variable (:type "int") (reparse-symbol arg-sub-list) [146604 146614])
+                    ("detail" variable (:type "int") (reparse-symbol arg-sub-list) [146653 146664])
+                    ("opaque" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [146703 146716]))                  
+                :type "int")
+                nil [146424 147639])
+            ("libvirt_virConnectDomainEventRegister" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("PyObject" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [147697 147724])
+                    ("" variable (:type ("self" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [147724 147729])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147768 147783]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [147641 148587])
+            ("libvirt_virConnectDomainEventDeregister" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [148647 148678])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [148662 148679])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [148720 148735]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [148589 149354])
+            ("addHandleObj" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [149461 149491])
+            ("updateHandleObj" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [149492 149525])
+            ("removeHandleObj" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [149526 149559])
+            ("addTimeoutObj" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [149560 149591])
+            ("updateTimeoutObj" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [149592 149626])
+            ("removeTimeoutObj" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [149627 149661])
+            ("libvirt_virEventAddHandleFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [149704 149711])
+                    ("event" variable (:type "int") (reparse-symbol arg-sub-list) [149742 149752])
+                    ("cb" variable (:type ("virEventHandleCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [149783 149809])
+                    ("opaque" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [149840 149853])
+                    ("ff" variable (:type ("virFreeCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [149884 149903]))                  
+                :type "int")
+                nil [149663 151366])
+            ("libvirt_virEventUpdateHandleFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("watch" variable (:type "int") (reparse-symbol arg-sub-list) [151413 151423])
+                    ("event" variable (:type "int") (reparse-symbol arg-sub-list) [151457 151467]))                  
+                :type "void")
+                nil [151368 152012])
+            ("libvirt_virEventRemoveHandleFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("watch" variable (:type "int") (reparse-symbol arg-sub-list) [152059 152069]))                  
+                :type "int")
+                nil [152015 152612])
+            ("libvirt_virEventAddTimeoutFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [152657 152669])
+                    ("cb" variable (:type ("virEventTimeoutCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [152701 152728])
+                    ("opaque" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [152760 152773])
+                    ("ff" variable (:type ("virFreeCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [152805 152824]))                  
+                :type "int")
+                nil [152615 154224])
+            ("libvirt_virEventUpdateTimeoutFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("timer" variable (:type "int") (reparse-symbol arg-sub-list) [154272 154282])
+                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [154317 154329]))                  
+                :type "void")
+                nil [154226 154877])
+            ("libvirt_virEventRemoveTimeoutFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("timer" variable (:type "int") (reparse-symbol arg-sub-list) [154924 154934]))                  
+                :type "int")
+                nil [154879 155478])
+            ("libvirt_virEventRegisterImpl" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [155527 155558])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [155542 155559])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [155589 155604]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [155480 157326])
+            ("libvirt_virEventInvokeHandleCallback" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [157383 157414])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [157398 157415])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [157453 157468]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [157328 158049])
+            ("libvirt_virEventInvokeTimeoutCallback" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [158107 158138])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [158122 158139])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [158178 158193]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [158051 158740])
+            ("libvirt_virEventInvokeFreeCallback" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [158795 158826])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [158810 158827])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [158863 158878]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [158742 159375])
+            ("libvirt_virEventHandleCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("watch" variable (:type "int") (reparse-symbol arg-sub-list) [159420 159430])
+                    ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [159462 159469])
+                    ("events" variable (:type "int") (reparse-symbol arg-sub-list) [159501 159512])
+                    ("opaque" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [159544 159557]))                  
+                :type "void")
+                nil [159377 160331])
+            ("libvirt_virEventAddHandle" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [160377 160408])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [160392 160409])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [160436 160451]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [160333 160985])
+            ("libvirt_virEventTimeoutCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("timer" variable (:type "int") (reparse-symbol arg-sub-list) [161031 161041])
+                    ("opaque" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [161074 161087]))                  
+                :type "void")
+                nil [160987 161848])
+            ("libvirt_virEventAddTimeout" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [161895 161926])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [161910 161927])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [161955 161970]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [161850 162489])
+            ("libvirt_virConnectDomainEventFreeFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("opaque" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [162541 162554]))                  
+                :type "void")
+                nil [162491 162698])
+            ("libvirt_virConnectDomainEventLifecycleCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable (:type ("virConnectPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [162758 162793])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [162777 162794])
+                    ("dom" variable (:type ("virDomainPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [162842 162859])
+                    ("event" variable (:type "int") (reparse-symbol arg-sub-list) [162907 162917])
+                    ("detail" variable (:type "int") (reparse-symbol arg-sub-list) [162965 162976])
+                    ("opaque" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [163024 163037]))                  
+                :type "int")
+                nil [162700 164284])
+            ("libvirt_virConnectDomainEventGenericCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable (:type ("virConnectPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [164342 164377])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [164361 164378])
+                    ("dom" variable (:type ("virDomainPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [164424 164441])
+                    ("opaque" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [164487 164500]))                  
+                :type "int")
+                nil [164286 165656])
+            ("libvirt_virConnectDomainEventRTCChangeCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable (:type ("virConnectPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [165716 165751])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [165735 165752])
+                    ("dom" variable (:type ("virDomainPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [165800 165817])
+                    ("utcoffset" variable (:type "long long") (reparse-symbol arg-sub-list) [165865 165885])
+                    ("opaque" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [165933 165946]))                  
+                :type "int")
+                nil [165658 167202])
+            ("libvirt_virConnectDomainEventWatchdogCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable (:type ("virConnectPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [167261 167296])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [167280 167297])
+                    ("dom" variable (:type ("virDomainPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [167344 167361])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [167408 167419])
+                    ("opaque" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [167466 167479]))                  
+                :type "int")
+                nil [167204 168717])
+            ("libvirt_virConnectDomainEventIOErrorCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable (:type ("virConnectPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [168775 168810])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [168794 168811])
+                    ("dom" variable (:type ("virDomainPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [168857 168874])
+                    ("srcPath" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [168920 168940])
+                    ("devAlias" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [168986 169007])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [169053 169064])
+                    ("opaque" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [169110 169123]))                  
+                :type "int")
+                nil [168719 170381])
+            ("libvirt_virConnectDomainEventIOErrorReasonCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable (:type ("virConnectPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [170445 170480])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [170464 170481])
+                    ("dom" variable (:type ("virDomainPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [170533 170550])
+                    ("srcPath" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [170602 170622])
+                    ("devAlias" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [170674 170695])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [170747 170758])
+                    ("reason" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [170810 170829])
+                    ("opaque" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [170881 170894]))                  
+                :type "int")
+                nil [170383 172167])
+            ("libvirt_virConnectDomainEventGraphicsCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable (:type ("virConnectPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [172226 172261])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [172245 172262])
+                    ("dom" variable (:type ("virDomainPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [172309 172326])
+                    ("phase" variable (:type "int") (reparse-symbol arg-sub-list) [172373 172383])
+                    ("local" variable (:type ("virDomainEventGraphicsAddressPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [172430 172469])
+                    ("remote" variable (:type ("virDomainEventGraphicsAddressPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [172516 172556])
+                    ("authScheme" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [172603 172626])
+                    ("subject" variable (:type ("virDomainEventGraphicsSubjectPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [172673 172714])
+                    ("opaque" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [172761 172774]))                  
+                :type "int")
+                nil [172169 176289])
+            ("libvirt_virConnectDomainEventBlockJobCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable (:type ("virConnectPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [176348 176383])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [176367 176384])
+                    ("dom" variable (:type ("virDomainPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [176431 176448])
+                    ("disk" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [176495 176512])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [176559 176568])
+                    ("status" variable (:type "int") (reparse-symbol arg-sub-list) [176615 176626])
+                    ("opaque" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [176673 176686]))                  
+                :type "int")
+                nil [176291 177866])
+            ("libvirt_virConnectDomainEventDiskChangeCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable (:type ("virConnectPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [177927 177962])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [177946 177963])
+                    ("dom" variable (:type ("virDomainPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [178012 178029])
+                    ("oldSrcPath" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [178078 178101])
+                    ("newSrcPath" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [178150 178173])
+                    ("devAlias" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [178222 178243])
+                    ("reason" variable (:type "int") (reparse-symbol arg-sub-list) [178292 178303])
+                    ("opaque" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [178352 178365]))                  
+                :type "int")
+                nil [177868 179642])
+            ("libvirt_virConnectDomainEventTrayChangeCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable (:type ("virConnectPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [179703 179738])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [179722 179739])
+                    ("dom" variable (:type ("virDomainPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [179788 179805])
+                    ("devAlias" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [179854 179875])
+                    ("reason" variable (:type "int") (reparse-symbol arg-sub-list) [179924 179935])
+                    ("opaque" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [179984 179997]))                  
+                :type "int")
+                nil [179644 181212])
+            ("libvirt_virConnectDomainEventPMWakeupCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable (:type ("virConnectPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [181271 181306])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [181290 181307])
+                    ("dom" variable (:type ("virDomainPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [181354 181371])
+                    ("reason" variable (:type "int") (reparse-symbol arg-sub-list) [181418 181429])
+                    ("opaque" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [181476 181489]))                  
+                :type "int")
+                nil [181214 182727])
+            ("libvirt_virConnectDomainEventPMSuspendCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable (:type ("virConnectPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [182787 182822])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [182806 182823])
+                    ("dom" variable (:type ("virDomainPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [182871 182888])
+                    ("reason" variable (:type "int") (reparse-symbol arg-sub-list) [182936 182947])
+                    ("opaque" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [182995 183008]))                  
+                :type "int")
+                nil [182729 184247])
+            ("libvirt_virConnectDomainEventRegisterAny" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [202639 202670])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [202654 202671])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [202713 202728]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [202580 208778])
+            ("libvirt_virConnectDomainEventDeregisterAny" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [208841 208872])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [208856 208873])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [208917 208932]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [208780 209478])
+            ("libvirt_virStreamEventFreeFunc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("opaque" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [216670 216683]))                  
+                :type "void")
+                nil [216627 216831])
+            ("libvirt_virStreamEventCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("st" variable (:type ("virStreamPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [216876 216908])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [216892 216909])
+                    ("events" variable (:type "int") (reparse-symbol arg-sub-list) [216941 216952])
+                    ("opaque" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [216984 216997]))                  
+                :type "void")
+                nil [216833 217817])
+            ("libvirt_virStreamEventAddCallback" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [217871 217902])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [217886 217903])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [217938 217953]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [217819 218780])
+            ("libvirt_virStreamRecv" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [218822 218853])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [218837 218854])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [218877 218892]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [218782 219715])
+            ("libvirt_virStreamSend" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [219757 219788])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [219772 219789])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [219812 219827]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [219717 220393])
+            ("libvirt_virDomainSendKey" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [220438 220469])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [220453 220470])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [220496 220511]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [220395 221631])
+            ("libvirt_virDomainMigrateGetMaxSpeed" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [222517 222548])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [222532 222549])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [222586 222601]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [222463 223172])
+            ("libvirt_virDomainBlockPeek" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [228339 228370])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [228354 228371])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [228399 228414]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [228294 229254])
+            ("libvirt_virDomainMemoryPeek" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [229302 229333])
+                    ("" variable (:type ("ATTRIBUTE_UNUSED" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [229317 229334])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [229363 229378]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [229256 230181])
+            ("libvirtMethods" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+#include \"build/libvirt-export.c\"
+    {(char *) \"virGetVersion\", libvirt_virGetVersion, METH_VARARGS, NULL},
+    {(char *) \"virConnectGetVersion\", libvirt_virConnectGetVersion, METH_VARARGS, NULL},
+#if LIBVIR_CHECK_VERSION(1, 1, 3)
+    {(char *) \"virConnectGetCPUModelNames\", libvirt_virConnectGetCPUModelNames, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(1, 1, 3) */
+    {(char *) \"virConnectGetLibVersion\", libvirt_virConnectGetLibVersion, METH_VARARGS, NULL},
+    {(char *) \"virConnectOpenAuth\", libvirt_virConnectOpenAuth, METH_VARARGS, NULL},
+    {(char *) \"virConnectListDomainsID\", libvirt_virConnectListDomainsID, METH_VARARGS, NULL},
+    {(char *) \"virConnectListDefinedDomains\", libvirt_virConnectListDefinedDomains, METH_VARARGS, NULL},
+#if LIBVIR_CHECK_VERSION(0, 9, 13)
+    {(char *) \"virConnectListAllDomains\", libvirt_virConnectListAllDomains, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(0, 9, 13) */
+    {(char *) \"virConnectDomainEventRegister\", libvirt_virConnectDomainEventRegister, METH_VARARGS, NULL},
+    {(char *) \"virConnectDomainEventDeregister\", libvirt_virConnectDomainEventDeregister, METH_VARARGS, NULL},
+    {(char *) \"virConnectDomainEventRegisterAny\", libvirt_virConnectDomainEventRegisterAny, METH_VARARGS, NULL},
+    {(char *) \"virConnectDomainEventDeregisterAny\", libvirt_virConnectDomainEventDeregisterAny, METH_VARARGS, NULL},
+#if LIBVIR_CHECK_VERSION(1, 2, 1)
+    {(char *) \"virConnectNetworkEventRegisterAny\", libvirt_virConnectNetworkEventRegisterAny, METH_VARARGS, NULL},
+    {(char *) \"virConnectNetworkEventDeregisterAny\", libvirt_virConnectNetworkEventDeregisterAny, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(1, 2, 1) */
+#if LIBVIR_CHECK_VERSION(0, 10, 0)
+    {(char *) \"virConnectRegisterCloseCallback\", libvirt_virConnectRegisterCloseCallback, METH_VARARGS, NULL},
+    {(char *) \"virConnectUnregisterCloseCallback\", libvirt_virConnectUnregisterCloseCallback, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(0, 10, 0) */
+    {(char *) \"virStreamEventAddCallback\", libvirt_virStreamEventAddCallback, METH_VARARGS, NULL},
+    {(char *) \"virStreamRecv\", libvirt_virStreamRecv, METH_VARARGS, NULL},
+    {(char *) \"virStreamSend\", libvirt_virStreamSend, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetInfo\", libvirt_virDomainGetInfo, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetState\", libvirt_virDomainGetState, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetControlInfo\", libvirt_virDomainGetControlInfo, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetBlockInfo\", libvirt_virDomainGetBlockInfo, METH_VARARGS, NULL},
+    {(char *) \"virNodeGetInfo\", libvirt_virNodeGetInfo, METH_VARARGS, NULL},
+    {(char *) \"virNodeGetSecurityModel\", libvirt_virNodeGetSecurityModel, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetSecurityLabel\", libvirt_virDomainGetSecurityLabel, METH_VARARGS, NULL},
+#if LIBVIR_CHECK_VERSION(0, 10, 0)
+    {(char *) \"virDomainGetSecurityLabelList\", libvirt_virDomainGetSecurityLabelList, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(0, 10, 0) */
+    {(char *) \"virNodeGetCPUStats\", libvirt_virNodeGetCPUStats, METH_VARARGS, NULL},
+    {(char *) \"virNodeGetMemoryStats\", libvirt_virNodeGetMemoryStats, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetUUID\", libvirt_virDomainGetUUID, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetUUIDString\", libvirt_virDomainGetUUIDString, METH_VARARGS, NULL},
+    {(char *) \"virDomainLookupByUUID\", libvirt_virDomainLookupByUUID, METH_VARARGS, NULL},
+    {(char *) \"virRegisterErrorHandler\", libvirt_virRegisterErrorHandler, METH_VARARGS, NULL},
+    {(char *) \"virGetLastError\", libvirt_virGetLastError, METH_VARARGS, NULL},
+    {(char *) \"virConnGetLastError\", libvirt_virConnGetLastError, METH_VARARGS, NULL},
+    {(char *) \"virConnectListNetworks\", libvirt_virConnectListNetworks, METH_VARARGS, NULL},
+    {(char *) \"virConnectListDefinedNetworks\", libvirt_virConnectListDefinedNetworks, METH_VARARGS, NULL},
+#if LIBVIR_CHECK_VERSION(0, 10, 2)
+    {(char *) \"virConnectListAllNetworks\", libvirt_virConnectListAllNetworks, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(0, 10, 2) */
+    {(char *) \"virNetworkGetUUID\", libvirt_virNetworkGetUUID, METH_VARARGS, NULL},
+    {(char *) \"virNetworkGetUUIDString\", libvirt_virNetworkGetUUIDString, METH_VARARGS, NULL},
+    {(char *) \"virNetworkLookupByUUID\", libvirt_virNetworkLookupByUUID, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetAutostart\", libvirt_virDomainGetAutostart, METH_VARARGS, NULL},
+    {(char *) \"virNetworkGetAutostart\", libvirt_virNetworkGetAutostart, METH_VARARGS, NULL},
+    {(char *) \"virDomainBlockStats\", libvirt_virDomainBlockStats, METH_VARARGS, NULL},
+    {(char *) \"virDomainBlockStatsFlags\", libvirt_virDomainBlockStatsFlags, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetCPUStats\", libvirt_virDomainGetCPUStats, METH_VARARGS, NULL},
+    {(char *) \"virDomainInterfaceStats\", libvirt_virDomainInterfaceStats, METH_VARARGS, NULL},
+    {(char *) \"virDomainMemoryStats\", libvirt_virDomainMemoryStats, METH_VARARGS, NULL},
+    {(char *) \"virNodeGetCellsFreeMemory\", libvirt_virNodeGetCellsFreeMemory, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetSchedulerType\", libvirt_virDomainGetSchedulerType, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetSchedulerParameters\", libvirt_virDomainGetSchedulerParameters, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetSchedulerParametersFlags\", libvirt_virDomainGetSchedulerParametersFlags, METH_VARARGS, NULL},
+    {(char *) \"virDomainSetSchedulerParameters\", libvirt_virDomainSetSchedulerParameters, METH_VARARGS, NULL},
+    {(char *) \"virDomainSetSchedulerParametersFlags\", libvirt_virDomainSetSchedulerParametersFlags, METH_VARARGS, NULL},
+    {(char *) \"virDomainSetBlkioParameters\", libvirt_virDomainSetBlkioParameters, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetBlkioParameters\", libvirt_virDomainGetBlkioParameters, METH_VARARGS, NULL},
+    {(char *) \"virDomainSetMemoryParameters\", libvirt_virDomainSetMemoryParameters, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetMemoryParameters\", libvirt_virDomainGetMemoryParameters, METH_VARARGS, NULL},
+    {(char *) \"virDomainSetNumaParameters\", libvirt_virDomainSetNumaParameters, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetNumaParameters\", libvirt_virDomainGetNumaParameters, METH_VARARGS, NULL},
+    {(char *) \"virDomainSetInterfaceParameters\", libvirt_virDomainSetInterfaceParameters, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetInterfaceParameters\", libvirt_virDomainGetInterfaceParameters, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetVcpus\", libvirt_virDomainGetVcpus, METH_VARARGS, NULL},
+    {(char *) \"virDomainPinVcpu\", libvirt_virDomainPinVcpu, METH_VARARGS, NULL},
+    {(char *) \"virDomainPinVcpuFlags\", libvirt_virDomainPinVcpuFlags, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetVcpuPinInfo\", libvirt_virDomainGetVcpuPinInfo, METH_VARARGS, NULL},
+#if LIBVIR_CHECK_VERSION(0, 10, 0)
+    {(char *) \"virDomainGetEmulatorPinInfo\", libvirt_virDomainGetEmulatorPinInfo, METH_VARARGS, NULL},
+    {(char *) \"virDomainPinEmulator\", libvirt_virDomainPinEmulator, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(0, 10, 0) */
+#if LIBVIR_CHECK_VERSION(1, 2, 14)
+    {(char *) \"virDomainGetIOThreadInfo\", libvirt_virDomainGetIOThreadInfo, METH_VARARGS, NULL},
+    {(char *) \"virDomainPinIOThread\", libvirt_virDomainPinIOThread, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(1, 2, 14) */
+#if LIBVIR_CHECK_VERSION(4, 10, 0)
+    {(char *) \"virDomainSetIOThreadParams\", libvirt_virDomainSetIOThreadParams, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(4, 10, 0) */
+    {(char *) \"virConnectListStoragePools\", libvirt_virConnectListStoragePools, METH_VARARGS, NULL},
+    {(char *) \"virConnectListDefinedStoragePools\", libvirt_virConnectListDefinedStoragePools, METH_VARARGS, NULL},
+#if LIBVIR_CHECK_VERSION(0, 10, 2)
+    {(char *) \"virConnectListAllStoragePools\", libvirt_virConnectListAllStoragePools, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(0, 10, 2) */
+    {(char *) \"virStoragePoolGetAutostart\", libvirt_virStoragePoolGetAutostart, METH_VARARGS, NULL},
+    {(char *) \"virStoragePoolListVolumes\", libvirt_virStoragePoolListVolumes, METH_VARARGS, NULL},
+#if LIBVIR_CHECK_VERSION(0, 10, 2)
+    {(char *) \"virStoragePoolListAllVolumes\", libvirt_virStoragePoolListAllVolumes, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(0, 10, 2) */
+    {(char *) \"virStoragePoolGetInfo\", libvirt_virStoragePoolGetInfo, METH_VARARGS, NULL},
+    {(char *) \"virStorageVolGetInfo\", libvirt_virStorageVolGetInfo, METH_VARARGS, NULL},
+#if LIBVIR_CHECK_VERSION(3, 0, 0)
+    {(char *) \"virStorageVolGetInfoFlags\", libvirt_virStorageVolGetInfoFlags, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(3, 0, 0) */
+    {(char *) \"virStoragePoolGetUUID\", libvirt_virStoragePoolGetUUID, METH_VARARGS, NULL},
+    {(char *) \"virStoragePoolGetUUIDString\", libvirt_virStoragePoolGetUUIDString, METH_VARARGS, NULL},
+    {(char *) \"virStoragePoolLookupByUUID\", libvirt_virStoragePoolLookupByUUID, METH_VARARGS, NULL},
+    {(char *) \"virEventRegisterImpl\", libvirt_virEventRegisterImpl, METH_VARARGS, NULL},
+    {(char *) \"virEventAddHandle\", libvirt_virEventAddHandle, METH_VARARGS, NULL},
+    {(char *) \"virEventAddTimeout\", libvirt_virEventAddTimeout, METH_VARARGS, NULL},
+    {(char *) \"virEventInvokeHandleCallback\", libvirt_virEventInvokeHandleCallback, METH_VARARGS, NULL},
+    {(char *) \"virEventInvokeTimeoutCallback\", libvirt_virEventInvokeTimeoutCallback, METH_VARARGS, NULL},
+    {(char *) \"virEventInvokeFreeCallback\", libvirt_virEventInvokeFreeCallback, METH_VARARGS, NULL},
+    {(char *) \"virNodeListDevices\", libvirt_virNodeListDevices, METH_VARARGS, NULL},
+#if LIBVIR_CHECK_VERSION(0, 10, 2)
+    {(char *) \"virConnectListAllNodeDevices\", libvirt_virConnectListAllNodeDevices, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(0, 10, 2) */
+    {(char *) \"virNodeDeviceListCaps\", libvirt_virNodeDeviceListCaps, METH_VARARGS, NULL},
+    {(char *) \"virSecretGetUUID\", libvirt_virSecretGetUUID, METH_VARARGS, NULL},
+    {(char *) \"virSecretGetUUIDString\", libvirt_virSecretGetUUIDString, METH_VARARGS, NULL},
+    {(char *) \"virSecretLookupByUUID\", libvirt_virSecretLookupByUUID, METH_VARARGS, NULL},
+    {(char *) \"virConnectListSecrets\", libvirt_virConnectListSecrets, METH_VARARGS, NULL},
+#if LIBVIR_CHECK_VERSION(0, 10, 2)
+    {(char *) \"virConnectListAllSecrets\", libvirt_virConnectListAllSecrets, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(0, 10, 2) */
+    {(char *) \"virSecretGetValue\", libvirt_virSecretGetValue, METH_VARARGS, NULL},
+    {(char *) \"virSecretSetValue\", libvirt_virSecretSetValue, METH_VARARGS, NULL},
+    {(char *) \"virNWFilterGetUUID\", libvirt_virNWFilterGetUUID, METH_VARARGS, NULL},
+    {(char *) \"virNWFilterGetUUIDString\", libvirt_virNWFilterGetUUIDString, METH_VARARGS, NULL},
+    {(char *) \"virNWFilterLookupByUUID\", libvirt_virNWFilterLookupByUUID, METH_VARARGS, NULL},
+    {(char *) \"virConnectListNWFilters\", libvirt_virConnectListNWFilters, METH_VARARGS, NULL},
+#if LIBVIR_CHECK_VERSION(0, 10, 2)
+    {(char *) \"virConnectListAllNWFilters\", libvirt_virConnectListAllNWFilters, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(0, 10, 2) */
+#if LIBVIR_CHECK_VERSION(4, 5, 0)
+    {(char *) \"virConnectListAllNWFilterBindings\", libvirt_virConnectListAllNWFilterBindings, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(4, 5, 0) */
+    {(char *) \"virConnectListInterfaces\", libvirt_virConnectListInterfaces, METH_VARARGS, NULL},
+    {(char *) \"virConnectListDefinedInterfaces\", libvirt_virConnectListDefinedInterfaces, METH_VARARGS, NULL},
+#if LIBVIR_CHECK_VERSION(0, 10, 2)
+    {(char *) \"virConnectListAllInterfaces\", libvirt_virConnectListAllInterfaces, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(0, 10, 2) */
+    {(char *) \"virConnectBaselineCPU\", libvirt_virConnectBaselineCPU, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetJobInfo\", libvirt_virDomainGetJobInfo, METH_VARARGS, NULL},
+#if LIBVIR_CHECK_VERSION(1, 0, 3)
+    {(char *) \"virDomainGetJobStats\", libvirt_virDomainGetJobStats, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(1, 0, 3) */
+#if LIBVIR_CHECK_VERSION(5, 6, 0)
+    {(char *) \"virDomainListAllCheckpoints\", libvirt_virDomainListAllCheckpoints, METH_VARARGS, NULL},
+    {(char *) \"virDomainCheckpointListAllChildren\", libvirt_virDomainCheckpointListAllChildren, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(5, 6, 0) */
+    {(char *) \"virDomainSnapshotListNames\", libvirt_virDomainSnapshotListNames, METH_VARARGS, NULL},
+#if LIBVIR_CHECK_VERSION(0, 9, 13)
+    {(char *) \"virDomainListAllSnapshots\", libvirt_virDomainListAllSnapshots, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(0, 9, 13) */
+    {(char *) \"virDomainSnapshotListChildrenNames\", libvirt_virDomainSnapshotListChildrenNames, METH_VARARGS, NULL},
+#if LIBVIR_CHECK_VERSION(0, 9, 13)
+    {(char *) \"virDomainSnapshotListAllChildren\", libvirt_virDomainSnapshotListAllChildren, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(0, 9, 13) */
+    {(char *) \"virDomainRevertToSnapshot\", libvirt_virDomainRevertToSnapshot, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetBlockJobInfo\", libvirt_virDomainGetBlockJobInfo, METH_VARARGS, NULL},
+    {(char *) \"virDomainSetBlockIoTune\", libvirt_virDomainSetBlockIoTune, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetBlockIoTune\", libvirt_virDomainGetBlockIoTune, METH_VARARGS, NULL},
+    {(char *) \"virDomainSendKey\", libvirt_virDomainSendKey, METH_VARARGS, NULL},
+#if LIBVIR_CHECK_VERSION(1, 0, 3)
+    {(char *) \"virDomainMigrateGetCompressionCache\", libvirt_virDomainMigrateGetCompressionCache, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(1, 0, 3) */
+    {(char *) \"virDomainMigrateGetMaxSpeed\", libvirt_virDomainMigrateGetMaxSpeed, METH_VARARGS, NULL},
+#if LIBVIR_CHECK_VERSION(3, 7, 0)
+    {(char *) \"virDomainMigrateGetMaxDowntime\", libvirt_virDomainMigrateGetMaxDowntime, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(3, 7, 0) */
+    {(char *) \"virDomainMigrateGetMaxSpeed\", libvirt_virDomainMigrateGetMaxSpeed, METH_VARARGS, NULL},
+#if LIBVIR_CHECK_VERSION(1, 1, 0)
+    {(char *) \"virDomainMigrate3\", libvirt_virDomainMigrate3, METH_VARARGS, NULL},
+    {(char *) \"virDomainMigrateToURI3\", libvirt_virDomainMigrateToURI3, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(1, 1, 0) */
+    {(char *) \"virDomainBlockPeek\", libvirt_virDomainBlockPeek, METH_VARARGS, NULL},
+    {(char *) \"virDomainMemoryPeek\", libvirt_virDomainMemoryPeek, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetDiskErrors\", libvirt_virDomainGetDiskErrors, METH_VARARGS, NULL},
+#if LIBVIR_CHECK_VERSION(0, 10, 2)
+    {(char *) \"virNodeGetMemoryParameters\", libvirt_virNodeGetMemoryParameters, METH_VARARGS, NULL},
+    {(char *) \"virNodeSetMemoryParameters\", libvirt_virNodeSetMemoryParameters, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(0, 10, 2) */
+#if LIBVIR_CHECK_VERSION(1, 0, 0)
+    {(char *) \"virNodeGetCPUMap\", libvirt_virNodeGetCPUMap, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(1, 0, 0) */
+#if LIBVIR_CHECK_VERSION(1, 1, 1)
+    {(char *) \"virDomainCreateXMLWithFiles\", libvirt_virDomainCreateXMLWithFiles, METH_VARARGS, NULL},
+    {(char *) \"virDomainCreateWithFiles\", libvirt_virDomainCreateWithFiles, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(1, 1, 1) */
+#if LIBVIR_CHECK_VERSION(1, 2, 5)
+    {(char *) \"virDomainFSFreeze\", libvirt_virDomainFSFreeze, METH_VARARGS, NULL},
+    {(char *) \"virDomainFSThaw\", libvirt_virDomainFSThaw, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetTime\", libvirt_virDomainGetTime, METH_VARARGS, NULL},
+    {(char *) \"virDomainSetTime\", libvirt_virDomainSetTime, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(1, 2, 5) */
+#if LIBVIR_CHECK_VERSION(1, 2, 6)
+    {(char *) \"virNodeGetFreePages\", libvirt_virNodeGetFreePages, METH_VARARGS, NULL},
+    {(char *) \"virNetworkGetDHCPLeases\", libvirt_virNetworkGetDHCPLeases, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(1, 2, 6) */
+#if LIBVIR_CHECK_VERSION(1, 2, 8)
+    {(char *) \"virConnectGetAllDomainStats\", libvirt_virConnectGetAllDomainStats, METH_VARARGS, NULL},
+    {(char *) \"virDomainListGetStats\", libvirt_virDomainListGetStats, METH_VARARGS, NULL},
+    {(char *) \"virDomainBlockCopy\", libvirt_virDomainBlockCopy, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(1, 2, 8) */
+#if LIBVIR_CHECK_VERSION(1, 2, 9)
+    {(char *) \"virNodeAllocPages\", libvirt_virNodeAllocPages, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(1, 2, 9) */
+#if LIBVIR_CHECK_VERSION(1, 2, 11)
+    {(char *) \"virDomainGetFSInfo\", libvirt_virDomainGetFSInfo, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(1, 2, 11) */
+#if LIBVIR_CHECK_VERSION(1, 2, 14)
+    {(char *) \"virDomainInterfaceAddresses\", libvirt_virDomainInterfaceAddresses, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(1, 2, 14) */
+#if LIBVIR_CHECK_VERSION(1, 3, 3)
+    {(char *) \"virDomainGetPerfEvents\", libvirt_virDomainGetPerfEvents, METH_VARARGS, NULL},
+    {(char *) \"virDomainSetPerfEvents\", libvirt_virDomainSetPerfEvents, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(1, 3, 3) */
+#if LIBVIR_CHECK_VERSION(2, 0, 0)
+    {(char *) \"virConnectStoragePoolEventRegisterAny\", libvirt_virConnectStoragePoolEventRegisterAny, METH_VARARGS, NULL},
+    {(char *) \"virConnectStoragePoolEventDeregisterAny\", libvirt_virConnectStoragePoolEventDeregisterAny, METH_VARARGS, NULL},
+    {(char *) \"virDomainGetGuestVcpus\", libvirt_virDomainGetGuestVcpus, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(2, 0, 0) */
+#if LIBVIR_CHECK_VERSION(2, 2, 0)
+    {(char *) \"virConnectNodeDeviceEventRegisterAny\", libvirt_virConnectNodeDeviceEventRegisterAny, METH_VARARGS, NULL},
+    {(char *) \"virConnectNodeDeviceEventDeregisterAny\", libvirt_virConnectNodeDeviceEventDeregisterAny, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(2, 2, 0) */
+#if LIBVIR_CHECK_VERSION(3, 0, 0)
+    {(char *) \"virConnectSecretEventRegisterAny\", libvirt_virConnectSecretEventRegisterAny, METH_VARARGS, NULL},
+    {(char *) \"virConnectSecretEventDeregisterAny\", libvirt_virConnectSecretEventDeregisterAny, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(3, 0, 0) */
+#if LIBVIR_CHECK_VERSION(3, 4, 0)
+    {(char *) \"virStreamRecvHole\", libvirt_virStreamRecvHole, METH_VARARGS, NULL},
+    {(char *) \"virStreamSendHole\", libvirt_virStreamSendHole, METH_VARARGS, NULL},
+    {(char *) \"virStreamRecvFlags\", libvirt_virStreamRecvFlags, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(3, 4, 0) */
+#if LIBVIR_CHECK_VERSION(4, 4, 0)
+    {(char *) \"virConnectBaselineHypervisorCPU\", libvirt_virConnectBaselineHypervisorCPU, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(4, 4, 0) */
+#if LIBVIR_CHECK_VERSION(4, 5, 0)
+    {(char *) \"virDomainGetLaunchSecurityInfo\", libvirt_virDomainGetLaunchSecurityInfo, METH_VARARGS, NULL},
+    {(char *) \"virNodeGetSEVInfo\", libvirt_virNodeGetSEVInfo, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(4, 5, 0) */
+#if LIBVIR_CHECK_VERSION(5, 5, 0)
+    {(char *) \"virNetworkListAllPorts\", libvirt_virNetworkListAllPorts, METH_VARARGS, NULL},
+    {(char *) \"virNetworkPortSetParameters\", libvirt_virNetworkPortSetParameters, METH_VARARGS, NULL},
+    {(char *) \"virNetworkPortGetParameters\", libvirt_virNetworkPortGetParameters, METH_VARARGS, NULL},
+#endif /* LIBVIR_CHECK_VERSION(5, 5, 0) */
+    {NULL, NULL, 0, NULL}
+}"
+                :type ("PyMethodDef" type (:type "class") nil nil))
+                nil [287950 307343])
+            ("initlibvirtmod" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [307924 307929]))                  
+                :type "void")
+                nil [307853 308189]))          
+      :file "libvirt-override.c"
+      :pointmax 308226
+      :fsize 308225
+      :lastmodtime '(23880 25856 0 0)
+      :unmatched-syntax '((punctuation 147723 . 147724) (punctuation 53193 . 53194))
+      :lexical-table 
+        '(("VIR_ENUM_SENTINELS")
+          ("DEBUG" (spp-arg-list ("fmt" "...") 1230 . 1240) . 
+              ((DO "do" 1258 . 1260) (semantic-list "{}" 1261 . 1263) (WHILE "while" 1264 . 1269) (semantic-list "(0)" 1270 . 1273)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "typewrappers.h"
+      :fsize 8719
+      :lastmodtime '(23880 25856 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "libvirt-utils.h"
+      :fsize 13364
+      :lastmodtime '(23437 28631 0 0)))
+  :file "!pinvon!libvirt-python-5.6.0!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

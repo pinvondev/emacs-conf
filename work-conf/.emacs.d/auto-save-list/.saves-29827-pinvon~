@@ -1,0 +1,8 @@
+/usr/share/yum-plugins/getprogress.py
+/usr/share/yum-plugins/#getprogress.py#
+/usr/share/yum-plugins/test.py
+/usr/share/yum-plugins/#test.py#
+/etc/yum/pluginconf.d/test.conf
+/etc/yum/pluginconf.d/#test.conf#
+/etc/yum/pluginconf.d/fastestmirror.conf
+/etc/yum/pluginconf.d/#fastestmirror.conf#

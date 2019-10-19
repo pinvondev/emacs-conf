@@ -1,0 +1,92 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("types" include nil nil [1 13])
+            ("yum.plugins" include nil nil [15 81])
+            ("output" include nil nil [82 118])
+            ("requires_api_version" variable nil nil [120 148])
+            ("plugin_type" variable nil nil [149 192])
+            ("init_hook" function (:arguments 
+              ( ("conduit" variable nil (reparse-symbol function_parameters) [208 215]))              ) nil [194 294])
+            ("event_test" function
+               (:parent "dummy"
+                :arguments 
+                  ( ("self" variable nil (reparse-symbol function_parameters) [311 315])
+                    ("package" variable nil (reparse-symbol function_parameters) [317 324])
+                    ("action" variable nil (reparse-symbol function_parameters) [326 332])
+                    ("te_current" variable nil (reparse-symbol function_parameters) [334 344])
+                    ("te_total" variable nil (reparse-symbol function_parameters) [346 354])
+                    ("ts_current" variable nil (reparse-symbol function_parameters) [356 366])
+                    ("ts_total" variable nil (reparse-symbol function_parameters) [368 376]))                  
+                :documentation "Output information about an rpm operation.  This may
+    include a text progress bar.
+
+    :param package: the package involved in the event
+    :param action: the type of action that is taking place.  Valid
+       values are given by
+       :func:`rpmtrans.RPMBaseCallback.action.keys()`
+    :param te_current: a number representing the amount of work
+       already done in the current transaction
+    :param te_total: a number representing the total amount of work
+       to be done in the current transaction
+    :param ts_current: the number of the current transaction in
+       transaction set
+    :param ts_total: the total number of transactions in the
+       transaction set
+    ")
+                nil [296 1589]))          
+      :file "test.py"
+      :pointmax 1591
+      :fsize 1516
+      :lastmodtime '(23831 10218 815000 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+1. xx.py 插件放在 /usr/share/yum-plugins/ 目录下
+2. xx.conf 插件对应的配置文件放在 /etc/yum/pluginconf.d/ 目录下
+\"\"\"" code nil nil [23 122])
+            ("types" include nil nil [124 136])
+            ("yum.plugins" include nil nil [138 204])
+            ("output" include nil nil [205 241])
+            ("requires_api_version" variable nil nil [243 271])
+            ("plugin_type" variable nil nil [272 315])
+            ("init_hook" function (:arguments 
+              ( ("conduit" variable nil (reparse-symbol function_parameters) [331 338]))              ) nil [317 417])
+            ("event_test" function
+               (:parent "dummy"
+                :arguments 
+                  ( ("self" variable nil (reparse-symbol function_parameters) [434 438])
+                    ("package" variable nil (reparse-symbol function_parameters) [440 447])
+                    ("action" variable nil (reparse-symbol function_parameters) [449 455])
+                    ("te_current" variable nil (reparse-symbol function_parameters) [457 467])
+                    ("te_total" variable nil (reparse-symbol function_parameters) [469 477])
+                    ("ts_current" variable nil (reparse-symbol function_parameters) [479 489])
+                    ("ts_total" variable nil (reparse-symbol function_parameters) [491 499]))                  
+                :documentation "Output information about an rpm operation.  This may
+    include a text progress bar.
+
+    :param package: the package involved in the event
+    :param action: the type of action that is taking place.  Valid
+       values are given by
+       :func:`rpmtrans.RPMBaseCallback.action.keys()`
+    :param te_current: 当前任务进度
+    :param te_total: 当前任务总进度
+    :param ts_current: 当前任务序号
+    :param ts_total: 任务总数
+    ")
+                nil [419 1485]))          
+      :file "getprogress.py"
+      :pointmax 1485
+      :fsize 1590
+      :lastmodtime '(23831 10268 70000 0)
+      :unmatched-syntax '(($EOI 1485 . 1485))))
+  :file "!usr!share!yum-plugins!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

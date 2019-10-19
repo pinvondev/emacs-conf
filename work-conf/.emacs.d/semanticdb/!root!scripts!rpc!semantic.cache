@@ -1,0 +1,119 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("sys" include nil nil [25 35])
+            ("reload" code nil nil [36 47])
+            ("sys" code nil nil [48 79])
+            ("json" include nil nil [80 91])
+            ("socket" include nil nil [92 105])
+            ("time" include nil nil [106 117])
+            ("uuid" include nil nil [118 129])
+            ("re" include nil nil [130 139])
+            ("NameLen" variable nil nil [142 154])
+            ("DescriptionLen" variable nil nil [155 174])
+            ("print_dict" function (:arguments 
+              ( ("d" variable nil (reparse-symbol function_parameters) [191 192]))              ) nil [176 230])
+            ("JSONRPCException" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [308 330]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [284 288])
+                            ("message" variable nil (reparse-symbol function_parameters) [290 297]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [271 331]))                  
+                :type "class")
+                nil [232 331])
+            ("JSONRPCClient" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [440 456])
+                            ("self" variable nil (reparse-symbol indented_block_body) [465 487])
+                            ("self" variable nil (reparse-symbol indented_block_body) [496 518]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [379 383])
+                            ("addr" variable nil (reparse-symbol function_parameters) [385 389])
+                            ("port" variable nil (reparse-symbol function_parameters) [391 395])
+                            ("verbose" variable nil (reparse-symbol function_parameters) [402 409])
+                            ("timeout" variable nil (reparse-symbol function_parameters) [417 424]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [366 1307])
+                    ("__del__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1324 1328]))                          )
+                        (reparse-symbol indented_block_body) [1312 1357])
+                    ("call" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1372 1376])
+                            ("method" variable nil (reparse-symbol function_parameters) [1378 1384])
+                            ("params" variable nil (reparse-symbol function_parameters) [1386 1392])
+                            ("verbose" variable nil (reparse-symbol function_parameters) [1397 1404]))                          )
+                        (reparse-symbol indented_block_body) [1363 4664]))                  
+                :type "class")
+                nil [333 4664]))          
+      :file "client.py"
+      :pointmax 4664
+      :fsize 4663
+      :lastmodtime '(23862 46622 592925 391000)
+      :unmatched-syntax '((INDENT_BLOCK 1170 . 1307) (NEWLINE 1169 . 1170) (COLON 1168 . 1169) (TRY 527 . 530) (AS 1163 . 1165)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("sys" include nil nil [25 35])
+            ("reload" code nil nil [36 47])
+            ("sys" code nil nil [48 79])
+            ("json" include nil nil [81 92])
+            ("AddPool" function (:arguments 
+              ( ("client" variable nil (reparse-symbol function_parameters) [106 112])
+                ("args" variable nil (reparse-symbol function_parameters) [114 118]))              ) nil [94 1018])
+            ("DeletePool" function (:arguments 
+              ( ("client" variable nil (reparse-symbol function_parameters) [1034 1040])
+                ("args" variable nil (reparse-symbol function_parameters) [1042 1046]))              ) nil [1019 1150])
+            ("GetPool" function (:arguments 
+              ( ("client" variable nil (reparse-symbol function_parameters) [1163 1169])
+                ("args" variable nil (reparse-symbol function_parameters) [1171 1175]))              ) nil [1151 1277])
+            ("GetPools" function (:arguments 
+              ( ("client" variable nil (reparse-symbol function_parameters) [1291 1297])
+                ("args" variable nil (reparse-symbol function_parameters) [1299 1303]))              ) nil [1278 1365])
+            ("SetPool" function (:arguments 
+              ( ("client" variable nil (reparse-symbol function_parameters) [1378 1384])
+                ("args" variable nil (reparse-symbol function_parameters) [1386 1390]))              ) nil [1366 1750])
+            ("AddDiskToPool" function (:arguments 
+              ( ("client" variable nil (reparse-symbol function_parameters) [1769 1775])
+                ("args" variable nil (reparse-symbol function_parameters) [1777 1781]))              ) nil [1751 1984])
+            ("DeleteDiskFromPool" function (:arguments 
+              ( ("client" variable nil (reparse-symbol function_parameters) [2008 2014])
+                ("args" variable nil (reparse-symbol function_parameters) [2016 2020]))              ) nil [1985 2228])
+            ("GetPoolReconstructSchedule" function (:arguments 
+              ( ("client" variable nil (reparse-symbol function_parameters) [2260 2266])
+                ("args" variable nil (reparse-symbol function_parameters) [2268 2272]))              ) nil [2229 2392])
+            ("SetBitReversal" function (:arguments 
+              ( ("client" variable nil (reparse-symbol function_parameters) [2412 2418])
+                ("args" variable nil (reparse-symbol function_parameters) [2420 2424]))              ) nil [2393 2593])
+            ("SetChunkReadErr" function (:arguments 
+              ( ("client" variable nil (reparse-symbol function_parameters) [2614 2620])
+                ("args" variable nil (reparse-symbol function_parameters) [2622 2626]))              ) nil [2594 2839])
+            ("SetChunkWriteErr" function (:arguments 
+              ( ("client" variable nil (reparse-symbol function_parameters) [2861 2867])
+                ("args" variable nil (reparse-symbol function_parameters) [2869 2873]))              ) nil [2840 3086]))          
+      :file "pool.py"
+      :pointmax 3086
+      :fsize 3085
+      :lastmodtime '(23862 46622 631926 250000)
+      :unmatched-syntax nil))
+  :file "!root!scripts!rpc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
