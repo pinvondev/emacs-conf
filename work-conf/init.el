@@ -135,3 +135,5 @@
 (setq fci-rule-width 10)
 (setq fci-rule-color "orange")
 (setq fci-rule-column 72)
+
+(require 'init-gtd)
