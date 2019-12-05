@@ -32,7 +32,7 @@
  '(org-agenda-files (quote ("~/GTD/gtd.org")))
  '(package-selected-packages
    (quote
-    (fill-column-indicator anaconda-mode toc-org org-mind-map pug-mode go-mode google-c-style zygospore projectile flymake-cursor flymake-google-cpplint company auctex sr-speedbar monokai-theme helm volatile-highlights use-package undo-tree counsel-projectile)))
+    (org-pomodoro fill-column-indicator anaconda-mode toc-org org-mind-map pug-mode go-mode google-c-style zygospore projectile flymake-cursor flymake-google-cpplint company auctex sr-speedbar monokai-theme helm volatile-highlights use-package undo-tree counsel-projectile)))
  '(python-shell-interpreter "python")
  '(show-paren-mode t)
  '(tool-bar-mode nil))
