@@ -1,0 +1,9 @@
+(menu-bar-mode -1)  ;; 不显示菜单栏
+(tool-bar-mode -1)  ;; 不显示工具栏
+(column-number-mode 1)  ;; 显示第几列
+(js-indent-level 2)  ;; js编程时, 缩进2格
+(show-paren-mode t)  ;; 匹配括号
+(setq inhibit-startup-message t)  ;; 不打开教程页面
+
+
+(provide 'init-setup)
